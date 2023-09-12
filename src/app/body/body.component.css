@@ -1,0 +1,38 @@
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+.container
+{ margin: auto;
+  width: 50%;
+  border: 3px ;
+  padding: 10px;
+}
+
+.title{
+  text-align: center;
+}
+
+.profile-photo
+{
+  margin: auto;
+  width: 50%;
+  border: 3px ;
+  padding: 10px;
+display: flex;
+justify-content: center;
+
+}
+
+.photo{
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 10rem;
+
+
+}
+@media (max-width: 425px){
+    .Photo{
+        width: 150px;
+    }
+}

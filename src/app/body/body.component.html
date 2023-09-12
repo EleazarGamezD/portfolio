@@ -1,1 +1,31 @@
-<p>body works!</p>
+
+<body class="body">
+  <div class="profile-photo">
+    <img src="/assets/profile.jpg" class="photo" alt="profile Photo">
+  </div>
+  <div class="container">
+    <H2 class="title">Eleazar Alberto Gámez Díaz</H2>
+    <h3 class="title">Backend Developer</h3>
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+
+    <mat-tab label="Sobre mi  ">
+
+      <mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+    </mat-tab>
+
+    <mat-tab label="Proyectos">Content 2</mat-tab>
+    <mat-tab label="Contacto">Content 3</mat-tab>
+  </mat-tab-group>
+  </div>
+
+
+</body>
+
