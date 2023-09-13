@@ -2,37 +2,96 @@
   margin-bottom: 48px;
 }
 
-.container
-{ margin: auto;
+.container {
+  margin: auto;
   width: 50%;
-  border: 3px ;
+  border: 3px;
   padding: 10px;
 }
 
-.title{
+.title {
   text-align: center;
 }
 
-.profile-photo
-{
+.profile-photo {
   margin: auto;
   width: 50%;
-  border: 3px ;
+  border: 3px;
   padding: 10px;
-display: flex;
-justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
-.photo{
+.photo {
   width: 200px;
   margin-top: 10px;
   border-radius: 10rem;
 
+  -webkit-animation: photo 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: photo 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes photo {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes photo {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media (max-width: 425px) {
+  .Photo {
+    width: 150px;
+  }
+}
+
+.example-card {
+  max-width: 400px;
+  display: fixed;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+
+
+
+
+span{
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+  animation: typing 2s steps (12), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing { from {width: 0;}
 
 }
-@media (max-width: 425px){
-    .Photo{
-        width: 150px;
-    }
+@keyframes blink { 50% {border-color: transparent;}
+
 }

@@ -9,9 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { FooterComponent } from './footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
-  declarations: [AppComponent, BodyComponent],
+  declarations: [AppComponent, BodyComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,6 +21,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatTabsModule,
     MatCardModule,
     MatGridListModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
