@@ -1,61 +1,68 @@
-
 <body class="body">
   <div class="profile-photo">
-    <img src="/assets/profile.jpg" class="photo" alt="profile Photo">
+    <img src="/assets/images/profile.jpg" class="photo" alt="profile Photo" />
   </div>
   <div class="container">
-    <H2 class="title"><span>Eleazar Alberto Gámez Díaz .</span></H2>
-    <h3 class="title">Backend Developer</h3>
-  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+    <ngx-typed-js class="title"
+      [strings]="['Eleazar Alberto Gámez Díaz', 'Backend Developer ']"
+      [loop]="true" [fadeOut]="true" [backDelay]="1000"
+    >
+      <h2 class="typing"></h2>
+    </ngx-typed-js>
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+      <mat-tab label="Sobre mi  ">
+        <p>
+          Soy Desarrollador Backend en etapa Junior con 2 años de experiencia en
+          proyectos personales Autodidacta y con gran iniciativa personal,
+          imaginación y capacidad para adoptar diferentes soluciones a los a los
+          problemas que puedan surgir en la etapa de desarrollo o en la
+          adaptación e implementación de nuevas tecnologías..<br />
+        </p>
 
-    <mat-tab label="Sobre mi  ">
-<p>Soy Desarrollador Backend en etapa Junior con 2 años de experiencia en proyectos personales
-Autodidacta y con gran iniciativa personal, imaginación y capacidad para adoptar diferentes soluciones a los a
-los problemas que puedan surgir en la etapa de desarrollo o en la adaptación e implementación de nuevas
-tecnologías..<br>
+        <h3>Habilidades</h3>
 
-<h3>Habilidades</h3>
+        <p>
+          Backend: Node, NestJs<br />
+          Frontend: Angular<br />
+          Conocimientos en HTML,CSS, JavaScript, Typescript <br />
+          Uso de herramientas para el control de versiones GIT<br />
+          Manejo de base de datos relacionados.<br />
+          DQL Server, Postgres<br />
+          Manejo de base de datos No relacionales, MongoDb<br />
+          Contenedores de Docker.
+        </p>
+      </mat-tab>
 
-<p>Backend: Node, NestJs<br>
-Frontend: Angular<br>
-Conocimientos en HTML,CSS, JavaScript, Typescript <br>
-Uso de herramientas para el control de versiones GIT<br>
-Manejo de base de datos relacionados.<br>
-DQL Server, Postgres<br>
-Manejo de base de datos No relacionales, MongoDb<br>
-Contenedores de Docker.</p>
-    </mat-tab>
+      <mat-tab label="Proyectos">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct
+              spitz breeds of dog from Japan. A small, agile dog that copes very
+              well with mountainous terrain, the Shiba Inu was originally bred
+              for hunting.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-tab>
 
-    <mat-tab label="Proyectos">Content 2
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-
-
-    </mat-tab>
-
-
-    <mat-tab label="Contacto">Content 3</mat-tab>
-  </mat-tab-group>
+      <mat-tab label="Contacto">Content 3</mat-tab>
+    </mat-tab-group>
   </div>
-
-
-
 </body>
-<app-footer class="footer"></app-footer>
+
+

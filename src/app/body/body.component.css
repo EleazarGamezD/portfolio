@@ -14,7 +14,9 @@
 }
 
 .profile-photo {
+
   margin: auto;
+  margin-top: 50px;
   width: 50%;
   border: 3px;
   padding: 10px;
@@ -77,21 +79,3 @@
 
 
 
-
-
-span{
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 12ch;
-  animation: typing 2s steps (12), blink .5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@keyframes typing { from {width: 0;}
-
-}
-@keyframes blink { 50% {border-color: transparent;}
-
-}
