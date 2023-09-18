@@ -5,13 +5,22 @@
   <div class="container">
  <div class="title">
     <ngx-typed-js
-      [strings]="['Eleazar Alberto Gámez Díaz', 'Backend Developer ']"
-      [loop]="true" [fadeOut]="true" [backDelay]="1000" [showCursor]="false" [smartBackspace]="true" [typeSpeed]="70"
+      [strings]="['Eleazar Alberto Gámez Díaz']"
+      [loop]="false" [fadeOut]="true" [backDelay]="1000" [showCursor]="false" [smartBackspace]="true" [typeSpeed]="70"
     >
      <h2 class="typing"></h2>
     </ngx-typed-js>
-    </div>
-    <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="center">
+
+ <ngx-typed-js
+      [strings]="[ 'Backend Developer ']"
+      [loop]="false" [fadeOut]="true" [backDelay]="1000" [showCursor]="false" [smartBackspace]="true" [typeSpeed]="70"
+    >
+     <h2 class="typing"></h2>
+    </ngx-typed-js>
+
+
+  </div>
+    <mat-tab-group class="menu" mat-stretch-tabs="true" mat-align-tabs="center">
       <mat-tab label="Sobre mi  ">
         <div class="about-me">
         <p>
@@ -36,9 +45,9 @@
         </p>
         </div>
       </mat-tab>
-      <div class="Card">
+      <div class="card">
         <mat-tab class="proyects" label="Proyectos">
-          <mat-card class="example-card" *ngFor="let items of list_Proyectos">
+          <mat-card *ngFor="let items of list_Proyectos">
             <mat-card-header>
 
               <mat-card-title>{{items.title}}</mat-card-title>

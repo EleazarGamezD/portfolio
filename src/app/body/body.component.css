@@ -1,5 +1,6 @@
 .mat-tab-group {
   margin-bottom: 48px;
+  width: 700px;
 }
 
 .container {
@@ -71,15 +72,12 @@
   display: fixed;
 }
 
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
-}
+
 
 .about-me {
   background-color: rgb(229, 236, 238);
   border-radius: 10px;
-  width: 630px;
+  width: auto;
   margin: 50px;
 
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.35);
@@ -100,7 +98,7 @@
 }
 
 .form .title {
-  color: royalblue;
+  color: black;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -150,7 +148,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 32px;
   overflow: hidden;
@@ -224,13 +222,4 @@
 }
 /* fin css para aplicar a la tarjeta de los proyectos  */
 
-/* css para tajeta de proyectos  */
-.proyects{
- margin-top: 200px;
-}
-.Card{
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-left: 160px;
-}
+
