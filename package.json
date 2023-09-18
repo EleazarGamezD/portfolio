@@ -23,6 +23,7 @@
     "ngx-typed-js": "^2.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typewriter-effect": "^2.20.1",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

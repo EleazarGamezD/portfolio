@@ -8,7 +8,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  border: 10px solid red;
+
   Font-family: Consolas, monaco, monospace;
   display: flex;
   flex-direction: column;
