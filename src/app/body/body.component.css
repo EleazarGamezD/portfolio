@@ -1,6 +1,8 @@
 .mat-tab-group {
   margin-bottom: 48px;
   width: 700px;
+  border-radius: 4px red;
+
 }
 
 .container {
@@ -222,4 +224,13 @@
 }
 /* fin css para aplicar a la tarjeta de los proyectos  */
 
+/* seccion para letras de maquina de escribir  */
 
+.typed{
+  color:rgb(219, 213, 213)
+}
+/* seccion para letras de maquina de escribir  */
+
+
+/* menu de seleccion  */
+.menu{color:white}
