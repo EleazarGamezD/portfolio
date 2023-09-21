@@ -1,9 +1,4 @@
-.mat-tab-group {
-  margin-bottom: 48px;
-  width: 700px;
-  border-radius: 4px red;
 
-}
 
 .container {
   margin: auto;
@@ -14,8 +9,11 @@
 
 .title {
   text-align: center;
+  background-color: #212121;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.35);
 }
-
+mat-tab-group{border-radius: 1px; }
 .profile-photo {
   margin: auto;
   margin-top: 50px;

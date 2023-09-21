@@ -1,88 +1,102 @@
-<div class="profile-photo">
-  <img src="/assets/images/profile.jpg" class="photo" alt="profile Photo" />
-</div>
-
-<div class="container">
-  <div class="title">
-    <ngx-typed-js
-      class="typed"
-      [strings]="['Eleazar Alberto Gámez Díaz']"
-      [loop]="false"
-      [fadeOut]="true"
-      [backDelay]="1000"
-      [showCursor]="false"
-      [smartBackspace]="true"
-      [typeSpeed]="70"
-    >
-      <h2 class="typing"></h2>
-    </ngx-typed-js>
-
-    <ngx-typed-js
-      class="typed"
-      [strings]="['Backend Developer']"
-      [loop]="false"
-      [fadeOut]="true"
-      [backDelay]="1000"
-      [showCursor]="false"
-      [smartBackspace]="true"
-      [typeSpeed]="70"
-    >
-      <h2 class="typing"></h2>
-    </ngx-typed-js>
+<div class="wrapper">
+  <div class="profile-photo">
+    <img src="/assets/images/profile.jpg" class="photo" alt="profile Photo" />
   </div>
-  <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="center">
-    <mat-tab label="Sobre mi"  class="menu">
-      <div class="about-me">
-        <p>
-          Soy Desarrollador Backend en etapa Junior con 2 años de experiencia en
-          proyectos personales Autodidacta y con gran iniciativa personal,
-          imaginación y capacidad para adoptar diferentes soluciones a los a los
-          problemas que puedan surgir en la etapa de desarrollo o en la
-          adaptación e implementación de nuevas tecnologías..<br />
-        </p>
 
-        <strong>Stack Tecnológico</strong>
+  <div class="container">
+    <div class="title">
+      <ngx-typed-js
+        class="typed"
+        [strings]="['Eleazar Alberto Gámez Díaz']"
+        [loop]="false"
+        [fadeOut]="true"
+        [backDelay]="1000"
+        [showCursor]="false"
+        [smartBackspace]="true"
+        [typeSpeed]="70"
+      >
+        <h2 class="typing"></h2>
+      </ngx-typed-js>
 
-        <p>
-          Backend: Node, NestJs<br />
-          Frontend: Angular<br />
-          Conocimientos en HTML,CSS, JavaScript, Typescript <br />
-          Uso de herramientas para el control de versiones GIT<br />
-          Manejo de base de datos relacionados.<br />
-          DQL Server, Postgres<br />
-          Manejo de base de datos No relacionales, MongoDb<br />
-          Contenedores de Docker.
-        </p>
-      </div>
-    </mat-tab>
-    <div class="card">
-      <mat-tab class="proyects" label="Proyectos">
-        <mat-card *ngFor="let items of list_Proyectos">
-          <mat-card-header>
-            <mat-card-title>{{ items.title }}</mat-card-title>
-            <mat-card-title>{{ items.text1 }}</mat-card-title>
-          </mat-card-header>
-          <img mat-card-image [src]="items.image" alt="proyecto" />
-          <mat-card-content>
-            <p>
-              {{ items.text2 }}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <a [href]="items.link"><button mat-button>ver proyecto</button></a>
-          </mat-card-actions>
-        </mat-card>
-      </mat-tab>
+      <ngx-typed-js
+        class="typed"
+        [strings]="['Backend Developer']"
+        [loop]="false"
+        [fadeOut]="true"
+        [backDelay]="1000"
+        [showCursor]="false"
+        [smartBackspace]="true"
+        [typeSpeed]="70"
+      >
+        <h2 class="typing"></h2>
+      </ngx-typed-js>
     </div>
+    <mat-tab-group
+      mat-stretch-tabs="true"
+      mat-align-tabs="center"
+      [backgroundColor]="'primary'"
+      [color]="'warn'"
+      class="tab"
+    >
+      <mat-tab label="Sobre mi">
+        <div class="about-me">
+          <p>
+            Soy Desarrollador Backend en etapa Junior con 2 años de experiencia
+            en proyectos personales Autodidacta y con gran iniciativa personal,
+            imaginación y capacidad para adoptar diferentes soluciones a los a
+            los problemas que puedan surgir en la etapa de desarrollo o en la
+            adaptación e implementación de nuevas tecnologías..<br />
+          </p>
 
-    <mat-tab label="Contacto">
-      <form class="form">
-        <div class="title">Contact us</div>
-        <input type="text" placeholder="email" class="input" />
-        <textarea placeholder="Your message"></textarea>
+          <strong>Stack Tecnológico</strong>
 
-        <button>Submit</button>
-      </form>
-    </mat-tab>
-  </mat-tab-group>
+          <p class="text">
+            Backend: Node, NestJs<br />
+            Frontend: Angular<br />
+            Conocimientos en HTML,CSS, JavaScript, Typescript <br />
+            Uso de herramientas para el control de versiones GIT<br />
+            Manejo de base de datos relacionados.<br />
+            DQL Server, Postgres<br />
+            Manejo de base de datos No relacionales, MongoDb<br />
+            Contenedores de Docker.
+          </p>
+        </div>
+      </mat-tab>
+      <div class="card">
+        <mat-tab class="proyects" label="Proyectos">
+          <div class="about-me">
+            <mat-card *ngFor="let items of list_Proyectos" >
+              <mat-card-header>
+                <mat-card-title>{{ items.title }}</mat-card-title>
+                <mat-card-title>{{ items.text1 }}</mat-card-title>
+              </mat-card-header>
+              <img mat-card-image [src]="items.image" alt="proyecto" />
+              <mat-card-content>
+                <p>
+                  {{ items.text2 }}
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <a [href]="items.link"
+                  ><button mat-button>ver proyecto</button></a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </mat-tab>
+      </div>
+
+      <mat-tab label="Contacto">
+        <div class="about-me">
+          <form class="form">
+            <div class="title">Contact us</div>
+            <input type="text" placeholder="email" class="input" />
+            <textarea placeholder="Your message"></textarea>
+
+            <button>Submit</button>
+          </form>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </div>
+<app-footer></app-footer>

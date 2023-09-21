@@ -1,22 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body{
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+body {
   background-image: url(src\assets\images\background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
-  Font-family: Consolas, monaco, monospace;
+  font-family: Consolas, monaco, monospace;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-
+  min-height: 100%;
 }
 @media only screen and (max-width: 767px) {
-body {
-background-image: url(src\assets\images\background-mobile.jpg);
+  body {
+    background-image: url(src\assets\images\background-mobile.jpg);
+  }
 }
+.wrapper {
+  min-height: calc(100%- 4rem);
+}
+
+.footer {
+  height: 4rem;
+  background-color: black;
+
+  bottom: 0px;
+  width: 100%;
+
+  margin-top: auto;
+  font-family: "roboto";
+  color: white;
+  align-content: center;
+}
+.footer-content {
+  text-align: center;
+  margin-top: 3px;
 }
