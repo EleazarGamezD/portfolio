@@ -15,23 +15,18 @@ export interface Tile {
   styleUrls: ['./body.component.css'],
 })
 export class BodyComponent {
-
-
-
-  
   list_Proyectos: Portafolio[] = [
     {
-      title: 'Proyectos',
-      image: 'assets/appPaises.png',
-      text1: 'App-Paises',
+      image: 'assets/images/img1.jpg',
+      text1: 'Tu Bodega Api',
       text2:
-        'Aplicación realizada para buscar por paises, region y capital, fue mi primera aplicación.',
+        'Api de un E-comerce escalable con funciones básicas como creación de usuarios, roles de usuarios, creación de productos, carrito de compras por usuario, control de compras, usando base de datos Relacional Postgres y TyORM para el manejo, sistema de autenticaciones y encriptado de passwords.',
       text3:
-        'Observación: Aplicación de práctica lo que aprendí en el Curso de Angular en Udemy.',
+        'Stack de tecnologías : Nodejs, NestJs, Typescript, Postgres Sql, TypeORM, JsonWebToken (JTW)  ',
       link: 'https://aplicationpaises.netlify.app/',
     },
     {
-      image: 'assets/appMaps.png',
+      image: 'src/assets/images/img1.jpg',
       text1: 'App-Maps',
       text2:
         'Aplicación es buscar sitios, te muestra tu ubicación actual, siempre y cuando le permitas acceso.',
@@ -39,7 +34,7 @@ export class BodyComponent {
       link: 'https://aplicationmaps.netlify.app/',
     },
     {
-      image: 'assets/appYugiho.png',
+      image: 'src/assets/images/img1.jpg',
       text1: 'Proyecto Yugiho',
       text2:
         'Aplicación que Busca los personajes, tiene una tarjeta y un scroll infinito.',
@@ -47,7 +42,7 @@ export class BodyComponent {
       link: 'https://appyugiho.netlify.app/',
     },
     {
-      image: 'assets/appStore.png',
+      image: 'src/assets/images/img1.jpg',
       text1: 'Proyecto Store',
       text2:
         'Aplicación que tiene varios módulos, los cuáles son admin, user y el del store, es una minitienda, que básicamente puedes ver productos, comprar, registrate, solo el modulo admin puede ingresar productos y usuarios.',

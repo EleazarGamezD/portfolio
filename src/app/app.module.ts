@@ -9,13 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { FooterComponent } from './footer/footer.component';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 
 @NgModule({
-  declarations: [AppComponent, BodyComponent, FooterComponent],
+  declarations: [AppComponent, BodyComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

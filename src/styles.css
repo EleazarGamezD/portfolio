@@ -1,12 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-html,
-body {
+html {
   height: 100%;
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Consolas, monaco, monospace;
 }
 body {
   background-image: url(src\assets\images\background.jpg);
@@ -15,8 +14,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 
-  font-family: Consolas, monaco, monospace;
-  display: flex;
+ display: flex;
   flex-direction: column;
   min-height: 100%;
 }
@@ -26,22 +24,9 @@ body {
   }
 }
 .wrapper {
-  min-height: calc(100%- 4rem);
-}
+min-height: calc(100%- 4rem);
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(126, 13, 13);
+} 
 
-.footer {
-  height: 4rem;
-  background-color: black;
-
-  bottom: 0px;
-  width: 100%;
-
-  margin-top: auto;
-  font-family: "roboto";
-  color: white;
-  align-content: center;
-}
-.footer-content {
-  text-align: center;
-  margin-top: 3px;
-}
