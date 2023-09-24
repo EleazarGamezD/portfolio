@@ -4,7 +4,7 @@
   </div>
 
   <div class="container">
-    <div class="title">
+    <div class="portfolio-title">
       <ngx-typed-js
         class="typed"
         [strings]="['Eleazar Alberto Gámez Díaz']"
@@ -60,7 +60,7 @@
             Manejo de base de datos No relacionales, MongoDb<br />
             Contenedores de Docker.
           </p>
-          <div class="card">
+          <div class="social-card">
             <a href="#" class="socialContainer containerOne">
               <svg
                 class="socialSvg instagramSvg"
@@ -68,7 +68,6 @@
                 height="1em"
                 viewBox="0 0 496 512"
               >
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
                 />
@@ -102,58 +101,85 @@
         </div>
       </mat-tab>
       <mat-tab class="proyects" label="Proyectos">
-        <div class="box-info">
-          <div
-            class="section_our_solution"
-            *ngFor="let items of list_Proyectos"
-          >
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="our_solution_category">
-                  <div class="solution_cards_box">
-                    <div class="solution_card">
-                      <div class="hover_color_bubble"></div>
-                      <div class="so_top_icon">
-                        <img [src]="items.image" alt="proyecto" />
-                      </div>
-                      <div class="solu_title">
-                        <div>{{ items.text1 }}</div>
-                      </div>
-                      <div class="solu_description">
-                        <p>
-                          {{ items.text2 }}
-                        </p>
-                        <p>
-                          {{ items.text3 }}
-                        </p>
-                         <a [href]="items.link"
-                  ><button class="read_more_btn" type="button"  >
-                          Ver Código / Proyecto
-                        </button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div class="box-info" *ngFor="let items of list_Proyectos">
+          <div class="card-pc">
+            <div class="card">
+              <div class="top">
+                <p class="title">{{ items.text1 }}</p>
+                <span class="buttons">
+                  <button class="minimize">
+                    <svg viewBox="0 0 10.2 1" y="0px" x="0px">
+                      <rect height="1" width="10.2" y="50%" x="0"></rect>
+                    </svg>
+                  </button>
+                  <button class="maximize">
+                    <svg viewBox="0 0 10 10">
+                      <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
+                    </svg>
+                  </button>
+                  <button class="close">
+                    <svg viewBox="0 0 10 10">
+                      <polygon
+                        points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"
+                      ></polygon>
+                    </svg>
+                  </button>
+                </span>
+              </div>
+              <div class="topfix"></div>
+              <hr />
+              <div class="content">
+                <p>
+                  <code>
+                    <i class="c1">import</i> os, sys<br />
+                    <i class="c1">async </i> <b class="c5">runMyProgram </b>
+                    <b class="c3">( </b><b class="c4">{{ items.text1 }}</b
+                    ><b class="c3">
+                      )<b class="c6">{{ items.string1 }}</b></b
+                    ><br /><br />
+                    <b class="c2">const </b>programTitle <b class="c3">= </b
+                    ><b class="c1">program.description</b><br />
+                    <br />
+                    <b class="c7">console.</b><b class="c8">log</b
+                    ><b class="c3">(</b><b class="c4">"{{ items.text2 }}"</b
+                    ><b class="c3">)</b><br />
+                    <br />
+                    <b class="c3">const </b>techStack <b class="c3">= </b
+                    ><b class="c1">program.tecnologias</b><br />
+                    <br />
+                    <b class="c7">console.</b><b class="c8">log</b
+                    ><b class="c3">(</b><b class="c4">"{{ items.text3 }}"</b
+                    ><b class="c3">)</b><br />
+                    <br />
+                    <b class="c1">return </b> <br />
+                    <b class="c7">console.</b><b class="c8">table</b
+                    ><b class="c3">( </b
+                    ><b class="c4"
+                      ><a target="_blank" [href]="items.linkProyecto"
+                        ><button class="link-button">
+                          Ver Código
+                        </button></a
+                      >
+                      <a target="_blank" [href]="items.linkCodigo"
+                        ><button class="link-button">
+                          Ver  Proyecto
+                        </button></a
+                      ></b
+                    ><b class="c3"> )</b><br />
+
+                    <b class="c6">{{ items.string2 }}</b>
+                    <br />
+                    <br />
+
+                    <b class="c2">sys</b>.exit<b class="c3">(</b
+                    ><b class="c3">)</b><br />
+                    <br />
+                    <i class="comment">#this is a comment.</i>
+                  </code>
+                </p>
               </div>
             </div>
           </div>
-
-          <!-- <mat-card *ngFor="let items of list_Proyectos" >
-              <mat-card-header>
-                <mat-card-title>{{ items.title }}</mat-card-title>
-                <mat-card-title>{{ items.text1 }}</mat-card-title>
-              </mat-card-header>
-              <img mat-card-image [src]="items.image" alt="proyecto" />
-              <mat-card-content>
-                <p>
-                  {{ items.text2 }}
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <a [href]="items.link"
-                  ><button mat-button>ver proyecto</button></a>
-              </mat-card-actions>
-            </mat-card> -->
         </div>
       </mat-tab>
 
