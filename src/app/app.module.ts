@@ -13,9 +13,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { MailerComponent } from './mailer/mailer.component';
 
 @NgModule({
-  declarations: [AppComponent, BodyComponent],
+  declarations: [AppComponent, BodyComponent, MailerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
