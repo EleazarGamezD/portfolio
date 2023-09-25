@@ -7,6 +7,4 @@ export interface Portafolio {
   linkCodigo?: string;
   linkProyecto?: string;
   linkLogo?: string;
-  string1?: string;
-  string2?: string;
-}
+  }

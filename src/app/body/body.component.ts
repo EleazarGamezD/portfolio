@@ -22,45 +22,59 @@ export class BodyComponent {
         'Api de un E-comerce escalable con funciones básicas como creación de usuarios, roles de usuarios, creación de productos, carrito de compras por usuario, control de compras, usando base de datos Relacional Postgres y TyORM para el manejo, sistema de autenticaciones y encriptado de passwords.',
       text3:
         'Stack de tecnologías : Nodejs, NestJs, Typescript, Postgres Sql, TypeORM, JsonWebToken (JTW), Swagger(documentación)  ',
-      linkProyecto: 'https://aplicationpaises.netlify.app/',
-      linkCodigo: '',
-
-      string1: '{',
-      string2: '}',
+      linkProyecto: 'https://devshop-dev.fl0.io/api',
+      linkCodigo: 'https://github.com/EleazarGamezD/Tu-Bodega',
     },
     {
       image: 'src/assets/images/img1.jpg',
-      text1: 'App-Maps',
+      text1: 'Pokedex',
       text2:
-        'Aplicación es buscar sitios, te muestra tu ubicación actual, siempre y cuando le permitas acceso.',
-      text3: 'Observación: Proyecto de práctica.',
-      linkProyecto: 'https://aplicationmaps.netlify.app/',
-      linkCodigo: '',
-      string1: '{',
-      string2: '}',
-    },
-    {
-      image: 'src/assets/images/img1.jpg',
-      text1: 'Proyecto Yugiho',
-      text2:
-        'Aplicación que Busca los personajes, tiene una tarjeta y un scroll infinito.',
-      text3: 'Observación: Proyecto de práctica.',
-      linkProyecto: 'https://appyugiho.netlify.app/',
-      linkCodigo: '',
-      string1: '{',
-      string2: '}',
-    },
-    {
-      image: 'src/assets/images/img1.jpg',
-      text1: 'Proyecto Store',
-      text2:
-        'Aplicación que tiene varios módulos, los cuáles son admin, user y el del store, es una minitienda, que básicamente puedes ver productos, comprar, registrate, solo el modulo admin puede ingresar productos y usuarios.',
+        'Backend con conexion al API pokeapi.co para implementación del seed, con conexión a MongoAtlas, usando el framework NestJs',
       text3:
-        'Observación: Proyecto de personal para ver mis capacidades, esta todavia en proceso. Nota: El backend lo realizo Eleazar Gamez.',
-      linkProyecto: 'https://github.com/sorvylenny/tubodegaapp',
-      linkCodigo: '',
-      string1: '{',
-      string2: '}',
+        'Stack de tecnologías : NestJs, NodeJs, MongoAtlas, Javascript, Typescript, docker',
+      linkProyecto: '#',
+      linkCodigo: 'https://github.com/EleazarGamezD/pokedex',
+    },
+    {
+      image: 'src/assets/images/img1.jpg',
+      text1: 'GG-Shop',
+      text2:
+        'Backend de una app web tipo ecomerce realizada durante mis clases, con funciones básicas de productos y autenticación de usuarios, con conexión a  base de datos Postgres uso de TypeOrm, e implementación de un chat por cliente usando Websockets. ',
+      text3:
+        'Stack de tecnologías : Nestjs, NodeJs, Postgres, TypeOrm, Javascript, Typescript, Websockets, Swagger (documentacion), Docker',
+      linkProyecto: '#',
+      linkCodigo: 'https://github.com/EleazarGamezD/gg-shop',
+    },
+    {
+      image: 'src/assets/images/img1.jpg',
+      text1: 'Proyecto WS-Client',
+      text2:
+        'Peque#o proyecto frontend que se conecta al api GG-shop para el servicio de websocket',
+      text3: 'Stack de tecnologías : NodeJs, Typescript, Css, Html',
+      linkProyecto: '#',
+      linkCodigo: 'https://github.com/EleazarGamezD/ws-client',
+    },
+
+    {
+      image: 'src/assets/images/img1.jpg',
+      text1: 'Rick-And-Morty-Angular-Test',
+      text2:
+        'Proyecto tipo ensayo, con conexión al api rickymortyapi.com realizado para aprender el uso de técnicas frontend a nivel junior  ',
+      text3:
+        'Stack de tecnologías : NodeJs, Typescript,Javascript, Css, Html, Angular, Angular-Material.',
+      linkProyecto: '#',
+      linkCodigo: 'https://github.com/EleazarGamezD/CURSO',
+    },
+
+    {
+      image: 'src/assets/images/img1.jpg',
+      text1: 'Cursos',
+      text2:
+        'Coleccion de proyectos realizados durante mis estudios de backend, divididos en carpetas segundo el ejercicio realizado donde tenemos: Auth, Compras, Mi-App, Proyecto-Mailer,Proyecto-Auth. ',
+      text3:
+        'Stack de tecnologías : NodeJs, Typescript,Javascript,MongoDB, Css, Html, React, Postman',
+      linkProyecto: '#',
+      linkCodigo: 'https://github.com/EleazarGamezD/CURSO',
     },
   ];
 
