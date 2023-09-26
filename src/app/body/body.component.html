@@ -104,15 +104,20 @@
                         >"
                         <p class="text">
                           <strong>Backend:</strong> NodeJs, NestJs<br />
-                          <strong>FrontEnd:</strong> Angular, Angular-Material<br />
-                          <strong>Lenguajes:</strong> "HTML",CSS, JavaScript, Typescript
+                          <strong>FrontEnd:</strong> Angular,
+                          Angular-Material<br />
+                          <strong>Lenguajes:</strong> "HTML",CSS, JavaScript,
+                          Typescript
                           <br />
                           Uso de herramientas para el control de versiones
                           GIT<br />
-                          <strong>Manejo de base de datos relacionados.</strong><br />
+                          <strong>Manejo de base de datos relacionados.</strong
+                          ><br />
                           SQL Server, Postgres<br />
-                          <strong>Manejo de base de datos No relacionales</strong><br/>
-                           MongoDb<br />
+                          <strong
+                            >Manejo de base de datos No relacionales</strong
+                          ><br />
+                          MongoDb<br />
                           Contenedores de Docker.
                         </p>
                         "</b
@@ -136,10 +141,16 @@
                   </p>
                 </div>
               </div>
-<div class="logos" >
-    <div class="logo-image" *ngFor="let logos of list_Tecnologias" ><a [href]="logos.linkLogo"></a></div>
-</div>
-
+              <!-- inicio tecnologias  -->
+              <br>
+            <br>
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
+                    <img src="{{item.linkLogo}}" class="card-img-top" />
+                  </ng-container>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -254,8 +265,7 @@
                     <i class="c1">import</i> os, sys<br />
                     <i class="c1">async </i> <b class="c5">runMyProgram </b>
                     <b class="c3">( </b><b class="c4">{{ items.text1 }}</b
-                    ><b class="c3">
-                      )<b class="c6">&#123;</b></b
+                    ><b class="c3"> )<b class="c6">&#123;</b></b
                     ><br /><br />
                     <b class="c2">const </b>programTitle <b class="c3">= </b
                     ><b class="c1">program.description</b><br />
@@ -275,10 +285,10 @@
                     <b class="c7">console.</b><b class="c8">table</b
                     ><b class="c3">( </b
                     ><b class="c4"
-                      ><a target="_blank" [href]="items.linkProyecto"
+                      ><a target="_blank" [href]="items.linkCodigo" 
                         ><button class="link-button">Ver Código</button></a
                       >
-                      <a target="_blank" [href]="items.linkCodigo"
+                      <a target="_blank" [href]="items.linkProyecto"
                         ><button class="link-button">Ver Proyecto</button></a
                       ></b
                     ><b class="c3"> )</b><br />
@@ -306,4 +316,10 @@
       </mat-tab> -->
     </mat-tab-group>
   </div>
+
+     <div class="footer"><div class="footer-conten">
+       <h6> © 2023 Copyright: Realizado por Eleazar Gamez</h6>
+     </div>
+      </div>
 </div>
+

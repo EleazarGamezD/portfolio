@@ -28,3 +28,24 @@ min-height: calc(100%- 4rem);
 
 }
 
+
+.footer {
+  height: 4rem;
+  background-color: black;
+display:flex ;
+  justify-content: center;
+  bottom: 0px;
+  width: 100%;
+
+  margin-top: auto;
+  font-family:  Consolas, monaco, monospace;
+  color: white;
+
+}
+.footer-content {
+
+  align-content: center;
+  text-align: center;
+  margin-top: 3px;
+}
+

@@ -80,34 +80,64 @@ export class BodyComponent {
 
   list_Tecnologias: Portafolio[] = [
     { title: 'Tecnologias' },
-    {
-      linkLogo:
-        'https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg',
-    },
+    // Javascript logo
     {
       linkLogo:
         'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
     },
-    {
-      linkLogo:
-        'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg',
-    },
-    {
-      linkLogo:
-        'https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png',
-    },
-    {
-      linkLogo:
-        'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
-    },
+
+    // Typescript logo
     {
       linkLogo:
         'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg',
     },
+
+    // Html logo
     {
       linkLogo:
-        'https://vitolavecchia.altervista.org/wp-content/uploads/2020/06/Cos%C3%A8-e-quali-sono-le-caratteristiche-del-DBMS-MongoDB.jpeg',
+        'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg',
     },
-    { linkLogo: 'assets/material.png' },
+
+    // Css logo
+    {
+      linkLogo:
+        'https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png',
+    },
+    //NodeJs logo
+    {
+      linkLogo:
+        'https://p7.hiclipart.com/preview/306/37/167/node-js-javascript-web-application-express-js-computer-software-others.jpg',
+    },
+
+    //Nest logo
+    {
+      linkLogo:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1200px-NestJS.svg.png',
+    },
+    //Docker logo
+    {
+      linkLogo:
+        'https://assets.stickpng.com/images/62a9c7c08ff6441a2952dad3.png',
+    },
+    //Docker logo
+    {
+      linkLogo: 'https://cdn.worldvectorlogo.com/logos/postman.svg',
+    },
+    // mongoDb logo
+    {
+      linkLogo: 'https://www.svgrepo.com/show/331488/mongodb.svg',
+    },
+    // mongoDb logo
+    {
+      linkLogo:
+        'https://www.logo.wine/a/logo/React_(web_framework)/React_(web_framework)-Logo.wine.svg',
+    },
+    // Angular logo
+    {
+      linkLogo:
+        'https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg',
+    },
+    // angular material logo
+    { linkLogo: 'assets/images/material.png' },
   ];
 }
