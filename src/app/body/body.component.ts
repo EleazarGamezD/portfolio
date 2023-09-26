@@ -32,7 +32,7 @@ export class BodyComponent {
         'Backend con conexion al API pokeapi.co para implementación del seed, con conexión a MongoAtlas, usando el framework NestJs',
       text3:
         'Stack de tecnologías : NestJs, NodeJs, MongoAtlas, Javascript, Typescript, docker',
-      linkProyecto: '#',
+      linkProyecto: '',
       linkCodigo: 'https://github.com/EleazarGamezD/pokedex',
     },
     {
@@ -42,7 +42,7 @@ export class BodyComponent {
         'Backend de una app web tipo ecomerce realizada durante mis clases, con funciones básicas de productos y autenticación de usuarios, con conexión a  base de datos Postgres uso de TypeOrm, e implementación de un chat por cliente usando Websockets. ',
       text3:
         'Stack de tecnologías : Nestjs, NodeJs, Postgres, TypeOrm, Javascript, Typescript, Websockets, Swagger (documentacion), Docker',
-      linkProyecto: '#',
+      linkProyecto: '',
       linkCodigo: 'https://github.com/EleazarGamezD/gg-shop',
     },
     {
@@ -51,7 +51,7 @@ export class BodyComponent {
       text2:
         'Peque#o proyecto frontend que se conecta al api GG-shop para el servicio de websocket',
       text3: 'Stack de tecnologías : NodeJs, Typescript, Css, Html',
-      linkProyecto: '#',
+      linkProyecto: '',
       linkCodigo: 'https://github.com/EleazarGamezD/ws-client',
     },
 
@@ -62,7 +62,7 @@ export class BodyComponent {
         'Proyecto tipo ensayo, con conexión al api rickymortyapi.com realizado para aprender el uso de técnicas frontend a nivel junior  ',
       text3:
         'Stack de tecnologías : NodeJs, Typescript,Javascript, Css, Html, Angular, Angular-Material.',
-      linkProyecto: '#',
+      linkProyecto: '',
       linkCodigo: 'https://github.com/EleazarGamezD/CURSO',
     },
 
@@ -73,7 +73,7 @@ export class BodyComponent {
         'Coleccion de proyectos realizados durante mis estudios de backend, divididos en carpetas segundo el ejercicio realizado donde tenemos: Auth, Compras, Mi-App, Proyecto-Mailer,Proyecto-Auth. ',
       text3:
         'Stack de tecnologías : NodeJs, Typescript,Javascript,MongoDB, Css, Html, React, Postman',
-      linkProyecto: '#',
+      linkProyecto: '',
       linkCodigo: 'https://github.com/EleazarGamezD/CURSO',
     },
   ];
@@ -116,8 +116,7 @@ export class BodyComponent {
     },
     //Docker logo
     {
-      linkLogo:
-        'https://assets.stickpng.com/images/62a9c7c08ff6441a2952dad3.png',
+      linkLogo: 'assets/images/docker.png',
     },
     //Docker logo
     {
@@ -140,4 +139,10 @@ export class BodyComponent {
     // angular material logo
     { linkLogo: 'assets/images/material.png' },
   ];
+
+  // footer year
+  year: number;
+  constructor() {
+    this.year = new Date().getFullYear();
+  }
 }

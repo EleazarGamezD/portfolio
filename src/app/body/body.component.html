@@ -142,16 +142,15 @@
                 </div>
               </div>
               <!-- inicio tecnologias  -->
-              <br>
-            <br>
+              <br />
+              <br />
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
-                    <img src="{{item.linkLogo}}" class="card-img-top" />
+                    <img src="{{ item.linkLogo }}" class="card-img-top" />
                   </ng-container>
                 </div>
               </div>
-
             </div>
           </div>
           <!-- social media box -->
@@ -285,10 +284,10 @@
                     <b class="c7">console.</b><b class="c8">table</b
                     ><b class="c3">( </b
                     ><b class="c4"
-                      ><a target="_blank" [href]="items.linkCodigo" 
-                        ><button class="link-button">Ver Código</button></a
+                      ><a  *ngIf="items.linkCodigo !== null && items.linkCodigo !== undefined && items.linkCodigo !== ''" target="_blank" [href]="items.linkCodigo"
+                        ><button  class="link-button">Ver Código</button></a
                       >
-                      <a target="_blank" [href]="items.linkProyecto"
+                      <a *ngIf="items.linkProyecto !== null && items.linkProyecto !== undefined && items.linkProyecto !== ''" target="_blank" [href]="items.linkProyecto"
                         ><button class="link-button">Ver Proyecto</button></a
                       ></b
                     ><b class="c3"> )</b><br />
@@ -308,7 +307,7 @@
           </div>
         </div>
       </mat-tab>
-      <!-- desactivado el mailer para futura implementacion del servidor Express JS  -->
+      <!-- desactivado el mailer para futura implementación del servidor Express JS  -->
       <!-- <mat-tab label="Contacto">
         <div class="box-info">
           <app-mailer></app-mailer>
@@ -317,9 +316,9 @@
     </mat-tab-group>
   </div>
 
-     <div class="footer"><div class="footer-conten">
-       <h6> © 2023 Copyright: Realizado por Eleazar Gamez</h6>
-     </div>
-      </div>
+  <div class="footer">
+    <div class="footer-conten">
+      <h6>&copy; Eleazar Gámez {{ year }}</h6>
+    </div>
+  </div>
 </div>
-
