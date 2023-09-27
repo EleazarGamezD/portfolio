@@ -11,7 +11,7 @@ export interface Tile {
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css'],
+  styleUrls: [],
 })
 export class BodyComponent {
   list_Proyectos: Portafolio[] = [
