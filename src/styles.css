@@ -23,10 +23,6 @@ body {
     background-image: url(src\assets\images\background-mobile.jpg);
   }
 }
-.wrapper {
-min-height: calc(100%- 4rem);
-
-}
 
 
 .footer {
