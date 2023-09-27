@@ -6,7 +6,7 @@ import { BodyComponent } from './body/body.component';
 const routes: Routes = [
   { path: '', redirectTo: 'body', pathMatch: 'full' },
   { path: 'body', component: BodyComponent },
-  
+
 ];
 
 @NgModule({
