@@ -141,8 +141,15 @@ export class BodyComponent {
   ];
 
   // footer year
+  //profile photo
+  photo: string;
   year: number;
   constructor() {
     this.year = new Date().getFullYear();
+    this.photo = 'assets/images/profile.jpg';
   }
 }
+
+
+
+
