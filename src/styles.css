@@ -1,5 +1,476 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+.container {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.portfolio-title {
+  text-align: center;
+
+  background-color: #212121;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.35);
+}
+.tab {
+  border-radius: 1px;
+}
+.profile-photo {
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 10rem;
+
+  -webkit-animation: photo 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: photo 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes photo {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes photo {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media (max-width: 425px) {
+  .Photo {
+    width: 150px;
+  }
+}
+/* css para las cajas de contenido  */
+.box-info {
+  background-color: rgb(229, 236, 238);
+  border-radius: 10px;
+  width: auto;
+  margin: 50px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* css para el contact us  */
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+/* fin css para el contact us  */
+
+
+/* seccion para letras de maquina de escribir  */
+
+.typed {
+  color: rgb(219, 213, 213);
+}
+/* seccion para letras de maquina de escribir  */
+
+/* social links  */
+.social-card {
+  width: auto;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* git hub*/
+.containerOne:hover {
+  background-color: #1107d1;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+/* Email*/
+.containerFive:hover {
+  background-color: #b31b16;
+  transition-duration: 0.3s;
+}
+
+
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* css para aplicar a la tarjeta de los proyectos  */
+/* card for everything's  */
+.card-pc {
+padding: 10%;
+height: max-content;
+}
+.card {
+  width:100%;
+  height: auto;
+  background: #0c0c0c;
+  border-radius: 10px;
+  border: 1px #212121 solid;
+}
+
+.card hr {
+  color: #313131;
+  margin-top: -3.5px
+}
+
+.content {
+  color: #8e8e8e;
+  margin-left: 0.3em;
+}
+
+.c1 {
+  color: rgb(55, 91, 158)
+}
+
+.c2 {
+  color: rgb(55, 158, 150)
+}
+
+.c3 {
+  color: rgb(158, 151, 55)
+}
+
+.c4 {
+  color: rgb(88, 158, 55)
+}
+.c5 {
+  color: rgb(137, 55, 158)
+}
+.c6 {
+  color: rgb(58, 60, 197)
+}
+.c7 {
+  color: rgba(211, 202, 126, 0.76)
+}
+.c8 {
+  color: rgb(171, 173, 45)
+}
+.comment {
+  opacity: 50%
+}
+
+.title {
+  color: #e8e8e8;
+  font-size: small;
+  float: left;
+  margin-left: 0.6em;
+  margin-top: 0.6em;
+}
+
+.top {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  font-weight: 450;
+  background-color: #121212;
+  width: 100%;
+  text-align: right;
+  border-radius: 10px
+}
+
+.topfix {
+  background-color: #121212;
+  width: 100%;
+  height: 1em;
+  margin-top: -1em;
+}
+
+button {
+  width: 40px;
+  height: 35px;
+  margin-left: -5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: 0.2s;
+}
+
+button svg path,
+button svg rect,
+button svg polygon {
+  fill: #ffffff;
+}
+
+button svg {
+  width: 10px;
+  height: 10px;
+}
+
+.close:hover {
+  background-color: #ffffff10;
+}
+
+.maximize:hover {
+  background-color: #ffffff10;
+}
+
+.minimize:hover {
+  background-color: #ffffff10;
+}
+
+/* button link proyectos  */
+.link-button {
+position: relative;
+width:auto ;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 1px solid rgb(5, 112, 23);
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: rgb(88, 158, 55);
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin: 6px;
+}
+
+.link-button:hover {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 20px 5px rgba(26, 167, 33, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.link-button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.link-button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.link-button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.terminal_cursor {
+  display: block;
+  height: 14px;
+  width: 5px;
+  margin-left: 3px;
+  animation: curbl 1200ms linear infinite;
+}
+
+@keyframes curbl {
+
+  0% {
+    background: #ffffff;
+  }
+
+  49% {
+    background: #ffffff;
+  }
+
+  60% {
+    background: transparent;
+  }
+
+  99% {
+    background: transparent;
+  }
+
+  100% {
+    background: #ffffff;
+  }
+}
+
+/* fin css para aplicar a la tarjeta de los proyectos  */
+/* logos cards */
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+}
+.card-img-top:hover {
+    transition-duration: 5ms;
+    opacity: 0.9;
+    transform: scale(1.2);
+
+  }
+@media (max-width: 425px){
+    .card-img-top{
+        width: 35px;
+    }
+}
+
+/* fin css logos */
+
+/* css extra  */
 html {
   height: 100%;
 }
@@ -45,3 +516,41 @@ display:flex ;
   margin-top: 3px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+
+  .profile-photo {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .photo {
+    width: 150px;
+  }
+
+  /* Responsive styles for other elements */
+  .box-info {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .form {
+    width: 90%; /* Adjust form width for smaller screens */
+  }
+
+  .form .title {
+    font-size: 24px; /* Increase font size for smaller screens */
+  }
+
+  .form input {
+    height: 40px; /* Reduce input height for smaller screens */
+  }
+
+  .form textarea {
+    height: 80px; /* Reduce textarea height for smaller screens */
+  }
+
+  /* Add more responsive styles as needed */
+}
