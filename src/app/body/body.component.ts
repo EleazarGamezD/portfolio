@@ -22,7 +22,7 @@ export class BodyComponent {
         'Api de un E-comerce escalable con funciones básicas como creación de usuarios, roles de usuarios, creación de productos, carrito de compras por usuario, control de compras, usando base de datos Relacional Postgres y TyORM para el manejo, sistema de autenticaciones y encriptado de passwords.',
       text3:
         'Stack de tecnologías : Nodejs, NestJs, Typescript, Postgres Sql, TypeORM, JsonWebToken (JTW), Swagger(documentación)  ',
-      linkProyecto: 'https://devshop-dev.fl0.io/',
+      linkProyecto: 'https://tu-bodega.4.us-1.fl0.io',
       linkCodigo: 'https://github.com/EleazarGamezD/Tu-Bodega',
     },
     {
