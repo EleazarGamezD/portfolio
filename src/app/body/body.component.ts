@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { Portafolio } from '../interface';
 import * as $ from 'jquery';
 
-
-
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',

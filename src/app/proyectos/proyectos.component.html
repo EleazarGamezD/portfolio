@@ -1,6 +1,7 @@
- <mat-tab class="proyects" label="Proyectos">
-  <div class="box-info" *ngFor="let items of list_Proyectos">
-    <div class="card-pc">
+ <!-- Proyectos Tab -->
+<div class="proyects" label="Proyectos">
+  <div *ngFor="let items of list_Proyectos; let even = even" class="box-info">
+    <div class="card-pc" [ngClass]="{ 'even': even, 'odd': !even }">
       <div class="card">
         <div class="top">
           <p class="title">{{ items.text1 }}</p>
@@ -69,5 +70,12 @@
         </div>
       </div>
     </div>
+    <div class="media">
+      <!-- Aquí puedes poner tu foto o video -->
+      <img src="{{ items.image }}" alt="Project Image" *ngIf="items.image"
+        class="project-image" />
+    </div>
   </div>
-</mat-tab>
+</div>
+<app-contacto id="contacto"></app-contacto>
+<app-cv id="cv"></app-cv>

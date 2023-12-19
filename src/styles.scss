@@ -1,3 +1,26 @@
-body{
-  background-color: rgba($color: #292727, $alpha: 1.0);
+body {
+  background-color: rgba($color: #918c8c, $alpha: 1.0);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  overflow-y: auto;
+}
+
+app-proyectos {
+  position: relative;
+  /* O ajusta según sea necesario */
+  z-index: auto;
+  /* O ajusta según sea necesario */
+  /* Otros estilos... */
+}
+
+
+.popup-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

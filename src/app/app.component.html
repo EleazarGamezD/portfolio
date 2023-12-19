@@ -1,11 +1,9 @@
-
 <div id="main-container">
   <app-navbar></app-navbar>
   <app-home id="home"></app-home>
   <app-sobre-mi id="sobremi"></app-sobre-mi>
   <app-proyectos id="portfolio"></app-proyectos>
-  <app-contacto id="contacto"></app-contacto>
-  <app-cv id="cv"></app-cv>
-  <app-footer></app-footer>
-
+  <div class="popup-container" *ngIf="showPopup">
+    <router-outlet name="popup"></router-outlet>
+  </div>
 </div>

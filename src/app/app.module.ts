@@ -10,7 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 
 import { NgxTypedJsModule } from 'ngx-typed-js';
-import { SpyDirective, SpyTargetDirective } from '@thejlifex/ngx-scroll-spy';
+
 
 import { BodyComponent } from './body/body.component';
 import { AppComponent } from './app.component';
@@ -35,12 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     MatGridListModule,
     MatToolbarModule,
     MatIconModule,
-    NgxTypedJsModule,
-
-    SpyDirective,
-    SpyTargetDirective
-
-  ],
+    NgxTypedJsModule,],
   providers: [ScrollService],
   bootstrap: [AppComponent],
 })

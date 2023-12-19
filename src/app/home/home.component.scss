@@ -12,13 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+  height: 90vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 }
 
 .profile-container {
   display: flex;
   align-items: center;
-  max-width: 90%; /* Ajusta el ancho máximo del contenedor según tus preferencias */
+  max-width: 80%; /* Ajusta el ancho máximo del contenedor según tus preferencias */
 }
 
 .profile-photo {
@@ -28,10 +28,9 @@
 }
 
 .photo {
-  width: 100%; /* Ajusta el tamaño de la foto para que ocupe todo el ancho del contenedor */
-  height: 100%; /* Ajusta la altura automáticamente según el ancho */
+  width: 70%; /* Ajusta el tamaño de la foto para que ocupe todo el ancho del contenedor */
   max-height: 80vh; /* Ajusta la altura máxima según tus preferencias */
-  border-radius: 50%;
+  border-radius: 20%;
   animation: floatAnimation 1s ease-in-out infinite alternate;
 }
 
@@ -40,8 +39,9 @@
 }
 
 .typed {
-  font-size: 3em; /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-size: em; /* Ajusta el tamaño de la fuente según tus preferencias */
   color: #f1f1f1;
+  margin-top: 10px; /* Añade un poco de espacio entre las letras y la foto */
 }
 
 @keyframes floatAnimation {
@@ -52,7 +52,6 @@
     transform: translateY(-50px); /* Ajusta la cantidad de movimiento vertical */
   }
 }
-
 /* social links  */
 .social-card {
   width: auto;

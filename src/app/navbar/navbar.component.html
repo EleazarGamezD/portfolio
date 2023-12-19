@@ -1,4 +1,6 @@
- <div class="navbar-container">
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<div class="navbar-container">
   <div class="wrapper">
     <header>
       <nav>
@@ -17,12 +19,12 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#sobremi">Sobre Mi</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a routerLink="/body">V-1</a></li>
+            <li><a (click)="navigateTo('home')">Inicio</a></li>
+            <li><a (click)="navigateTo('sobremi')">Sobre Mi</a></li>
+            <li><a (click)="navigateTo('portfolio')">Portfolio</a></li>
+            <li><a (click)="navigateTo('contacto')">Contacto</a></li>
+            <li><a (click)="navigateTo('cv')">CV</a></li>
+            <li><a routerLink="/body">V.1</a></li>
           </ul>
         </div>
       </nav>

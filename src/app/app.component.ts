@@ -17,6 +17,13 @@ export class AppComponent {
     private scrollService: ScrollService
   ) { }
 
+  showPopup = false;
+
+  togglePopup(show: boolean) {
+    this.showPopup = show;
+  }
+
+
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
     // Agrega la lógica para determinar la sección visible aquí.

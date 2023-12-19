@@ -1,5 +1,7 @@
+<!-- eslint-disable @angular-eslint/template/alt-text -->
 <!-- sobre-mi.component.html -->
 <div class="about-container">
+  <h1>Sobre Mi</h1>
   <h2>Amante de la Tecnologia, Juegos y la Musica, me encanta la programacion.</h2>
   <p class="text">
     Soy Desarrollador Web Backend en etapa Junior con 2 años
@@ -10,4 +12,15 @@
     o en la adaptación e implementación de nuevas
     tecnologías.
   </p>
+  <br>
+  <!-- inicio tecnologias  -->
+  <h1>Mi Stack Tecnologico</h1>
+  <br>
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
+        <img src="{{ item.linkLogo }}" class="card-img-top" />
+      </ng-container>
+    </div>
+  </div>
 </div>
