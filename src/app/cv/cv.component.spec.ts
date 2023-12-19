@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MailerComponent } from './mailer.component';
+import { CvComponent } from './cv.component';
 
-describe('MailerComponent', () => {
-  let component: MailerComponent;
-  let fixture: ComponentFixture<MailerComponent>;
+describe('CvComponent', () => {
+  let component: CvComponent;
+  let fixture: ComponentFixture<CvComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MailerComponent]
+      declarations: [CvComponent]
     });
-    fixture = TestBed.createComponent(MailerComponent);
+    fixture = TestBed.createComponent(CvComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

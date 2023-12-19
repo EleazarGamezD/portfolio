@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* home.component.css, sobre-mi.component.css, proyectos.component.css, contacto.component.css */
+:host {
+  display: block;
+  height: 100vh;
+}
+
+
+/* sobre-mi.component.css */
+.about-container {
+  text-align: center;
+  max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+h2 {
+  font-size: 1.8em; /* Ajusta el tamaño de la fuente del título */
+  color: #333; /* Ajusta el color del texto según tus preferencias */
+}
+
+.text {
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente del párrafo */
+  line-height: 1.6; /* Ajusta la altura de línea según tus preferencias */
+  color: #555; /* Ajusta el color del texto según tus preferencias */
+  margin-top: 20px; /* Ajusta el espacio superior según tus preferencias */
+}

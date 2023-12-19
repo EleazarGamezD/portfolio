@@ -15,7 +15,7 @@
 $portfolio-primary: mat.define-palette(mat.$grey-palette, 900);
 $portfolio-accent: mat.define-palette(mat.$grey-palette, 900);
 
-// The warn palette is optional (defaults to red).
+// The warn palette is optional (defaults to <red).
 $portfolio-warn: mat.define-palette(mat.$orange-palette);
 
 // Create the theme object. A theme consists of configurations for individual

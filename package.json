@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,7 +21,12 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.5.1",
+    "ng-cli-pug-loader": "^0.2.2",
     "ngx-typed-js": "^2.1.1",
+    "popper.js": "^1.16.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "typewriter-effect": "^2.20.1",
@@ -37,6 +42,7 @@
     "@angular/cli": "~16.2.1",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "@types/jquery": "^3.5.29",
     "@typescript-eslint/eslint-plugin": "5.59.7",
     "@typescript-eslint/parser": "5.59.7",
     "angular-cli-ghpages": "^0.6.2",
@@ -47,6 +53,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "schematics-scss-migrate": "^2.3.17",
     "typescript": "~5.1.3"
   }
 }

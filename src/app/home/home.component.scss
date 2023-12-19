@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* home.component.css, sobre-mi.component.css, proyectos.component.css, contacto.component.css */
+:host {
+  display: block;
+  height: 100vh;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+/* home.component.css */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  max-width: 90%; /* Ajusta el ancho máximo del contenedor según tus preferencias */
+}
+
+.profile-photo {
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%; /* Ajusta el tamaño de la foto para que ocupe todo el ancho del contenedor */
+  height: 100%; /* Ajusta la altura automáticamente según el ancho */
+  max-height: 80vh; /* Ajusta la altura máxima según tus preferencias */
+  border-radius: 50%;
+  animation: floatAnimation 1s ease-in-out infinite alternate;
+}
+
+.portfolio-title {
+  flex-grow: 1;
+}
+
+.typed {
+  font-size: 3em; /* Ajusta el tamaño de la fuente según tus preferencias */
+  color: #f1f1f1;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px); /* Ajusta la cantidad de movimiento vertical */
+  }
+}
+
+/* social links  */
+.social-card {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  position: absolute; /* Cambiado a posición absoluta */
+  bottom: 10%; /* Alineado en la parte inferior */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translateX(-50%); /* Centrado horizontalmente */
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+
+/* git hub*/
+.containerOne:hover {
+  background-color: #1107d1;
+  transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+/* Email*/
+.containerFive:hover {
+  background-color: #b31b16;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
