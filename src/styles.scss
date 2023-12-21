@@ -2,7 +2,6 @@ body {
   background-color: rgba($color: #918c8c, $alpha: 1.0);
   display: grid;
   grid-template-rows: 1fr auto;
-  min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   overflow-y: auto;
 }

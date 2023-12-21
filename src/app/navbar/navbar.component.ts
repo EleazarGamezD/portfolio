@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-
 import { DOCUMENT, ViewportScroller } from '@angular/common';
 import { AppComponent } from '../app.component';
 import { Router } from '@angular/router';

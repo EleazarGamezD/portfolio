@@ -1,18 +1,10 @@
-@charset "UTF-8";
-/* home.component.css, sobre-mi.component.css, proyectos.component.css, contacto.component.css */
-:host {
-  display: block;
-  height: 100vh;
-}
-
-/* Agrega estilos adicionales según sea necesario */
-
 /* css para aplicar a la tarjeta de los proyectos  */
 /* card for everything's  */
 .card-pc {
   padding: 10%;
   height: max-content;
-  width: 60%; /* Ajusta según tus preferencias */
+  width: 60%;
+  /* Ajusta según tus preferencias */
 }
 
 .card {
@@ -241,27 +233,34 @@ button svg {
 }
 
 .box-info {
-  width: 48%; /* Ajusta el ancho de cada caja según tus preferencias */
-  margin-bottom: 20px; /* Agrega margen inferior para separar las cajas */
+  width: 48%;
+  /* Ajusta el ancho de cada caja según tus preferencias */
+  margin-bottom: 20px;
+  /* Agrega margen inferior para separar las cajas */
   display: flex;
 }
 
 .card-pc {
-  width: 48%; /* Ajusta el ancho del card-pc */
+  width: 48%;
+  /* Ajusta el ancho del card-pc */
 }
 
 .media {
-  width: 48%; /* Ajusta el ancho de la sección de media */
+  width: 48%;
+  /* Ajusta el ancho de la sección de media */
 }
 
 .project-image {
-  width: 100%; /* Ajusta el tamaño máximo de la imagen según tus preferencias */
-  max-height: 200px; /* Ajusta la altura máxima de la imagen según tus preferencias */
+  width: 100%;
+  /* Ajusta el tamaño máximo de la imagen según tus preferencias */
+  max-height: 200px;
+  /* Ajusta la altura máxima de la imagen según tus preferencias */
 }
 
 @media (max-width: 768px) {
   .box-info {
-    width: 100%; /* En pantallas pequeñas, ocupa todo el ancho */
+    width: 100%;
+    /* En pantallas pequeñas, ocupa todo el ancho */
     flex-direction: column;
   }
 
@@ -270,7 +269,8 @@ button svg {
   }
 
   .project-image {
-    max-height: none; /* Elimina la altura máxima en pantallas pequeñas */
+    max-height: none;
+    /* Elimina la altura máxima en pantallas pequeñas */
   }
 }
 

@@ -22,11 +22,15 @@ import { CvComponent } from './cv/cv.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ScrollService } from './scroll/scroll.service';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 
 
 @NgModule({
   declarations: [AppComponent, BodyComponent, HomeComponent, SobreMiComponent, ProyectosComponent, ContactoComponent, CvComponent, NavbarComponent, FooterComponent],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -35,8 +39,11 @@ import { FooterComponent } from './footer/footer.component';
     MatGridListModule,
     MatToolbarModule,
     MatIconModule,
-    NgxTypedJsModule,],
-  providers: [ScrollService],
+    NgxTypedJsModule,
+    ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule],
+  providers: [ScrollService,],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

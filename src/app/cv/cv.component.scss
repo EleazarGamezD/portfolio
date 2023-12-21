@@ -1,8 +1,87 @@
-@charset "UTF-8";
-/* home.component.css, sobre-mi.component.css, proyectos.component.css, contacto.component.css */
-:host {
-  display: block;
-  height: 100vh;
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cv-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.unique-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.unique-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #888;
+  z-index: 2;
+  transition: color 0.3s;
+}
+
+.unique-card:hover .card-content {
+  color: #ff7e5f;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.7);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.unique-card:hover .background-overlay {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+}
+
 
 /* Agrega estilos adicionales según sea necesario */
