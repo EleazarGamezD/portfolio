@@ -83,7 +83,4 @@ export class ProyectosComponent {
       linkCodigo: 'https://github.com/EleazarGamezD/CURSO',
     },
   ];
-
-
-
 }

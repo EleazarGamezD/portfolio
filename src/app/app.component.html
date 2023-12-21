@@ -1,9 +1,9 @@
 <div id="main-container">
   <app-navbar></app-navbar>
-  <app-home id="home"></app-home>
-  <app-sobre-mi id="sobremi"></app-sobre-mi>
-  <app-proyectos id="portfolio"></app-proyectos>
-  <div class="popup-container" *ngIf="showPopup">
-    <router-outlet name="popup"></router-outlet>
-  </div>
+
+  <!-- Show the BodyComponent only when the route is 'v1' -->
+  <router-outlet *ngIf="isV1Route"></router-outlet>
+
+  <!-- Show other components (portfolio, etc.) when not in 'v1' route -->
+  <router-outlet *ngIf="!isV1Route" id="home"></router-outlet>
 </div>

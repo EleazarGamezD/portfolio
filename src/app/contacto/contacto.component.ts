@@ -13,7 +13,6 @@ export class ContactoComponent {
   contactForm: FormGroup;
 
   constructor(
-
     private fb: FormBuilder,
     private emailService: EmailService
   ) {
