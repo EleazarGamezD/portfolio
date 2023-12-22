@@ -1,14 +1,25 @@
-@charset "UTF-8";
-
-/* home.component.css, sobre-mi.component.css, proyectos.component.css, contacto.component.css */
-:host {
-  display: block;
-  height: 100vh;
-}
-
-/* Agrega estilos adicionales según sea necesario */
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 /* home.component.css */
+body {
+  font-family: "Roboto Condensed", cursive;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: #333;
+}
+
+.home {
+  height: 80vh; // Ajustar la altura según tus necesidades
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; // Colocamos los elementos en columna
+}
+
 .center-container {
   display: flex;
   justify-content: center;
@@ -18,25 +29,282 @@
 }
 
 .profile-container {
-  display: flex;
-  align-items: center;
-  max-width: 80%;
-  /* Ajusta el ancho máximo del contenedor según tus preferencias */
+  margin-right: 50px;
+  margin-bottom: 20px; // Ajustamos el margen inferior
+  width: 400px; // Reducimos el ancho de la foto de perfil
+  height: 400px; // Definimos una altura fija para la foto de perfil
+  aspect-ratio: 1;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 15px 0px #00000070;
+  border-radius: 30% 70% 40% 60% / 30% 60% 40% 70%;
+  background: url("../../assets/images/profile_v2.jpg") no-repeat;
+  background-size: cover;
+
+  /*   This is for this image if your image is good then make
+  background-position: center; */
+  background-position-y: 40%;
+
+  animation: modernEffect 3s ease-in-out infinite alternate;
 }
 
-.profile-photo {
-  margin-right: 20px;
-  position: relative;
+@keyframes modernEffect {
+  0% {
+    border-radius: 30% 70% 40% 60% / 30% 60% 40% 70%;
+  }
+
+  100% {
+    border-radius: 70% 30% 60% 40% / 60% 30% 80% 40%;
+  }
+}
+
+/* Carrusel para Mi descripción */
+
+
+.wordCarousel {
+  font-size: 80px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Sacramento",
+    cursive;
+}
+
+.wordCarousel div {
   overflow: hidden;
+  position: relative;
+  float: left;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
 }
 
-.photo {
-  width: 70%;
-  /* Ajusta el tamaño de la foto para que ocupe todo el ancho del contenedor */
-  max-height: 80vh;
-  /* Ajusta la altura máxima según tus preferencias */
-  border-radius: 20%;
-  animation: floatAnimation 1s ease-in-out infinite alternate;
+.wordCarousel div li {
+  font-family: Serif;
+  color: #e6e1e1;
+  font-weight: 900;
+  padding: 0 10px;
+  height: 45px;
+  font-size: 55px;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.flip2 {
+  -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+  -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip4 {
+  -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+
+  5% {
+    margin-top: -90px;
+  }
+
+  50% {
+    margin-top: -90px;
+  }
+
+  55% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+
+  5% {
+    margin-top: -90px;
+  }
+
+  50% {
+    margin-top: -90px;
+  }
+
+  55% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@-webkit-keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+
+  5% {
+    margin-top: -180px;
+  }
+
+  33% {
+    margin-top: -180px;
+  }
+
+  38% {
+    margin-top: -90px;
+  }
+
+  66% {
+    margin-top: -90px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+
+  5% {
+    margin-top: -180px;
+  }
+
+  33% {
+    margin-top: -180px;
+  }
+
+  38% {
+    margin-top: -90px;
+  }
+
+  66% {
+    margin-top: -90px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@-webkit-keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+
+  5% {
+    margin-top: -270px;
+  }
+
+  25% {
+    margin-top: -270px;
+  }
+
+  30% {
+    margin-top: -180px;
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  55% {
+    margin-top: -90px;
+  }
+
+  75% {
+    margin-top: -90px;
+  }
+
+  80% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+
+  5% {
+    margin-top: -270px;
+  }
+
+  25% {
+    margin-top: -270px;
+  }
+
+  30% {
+    margin-top: -180px;
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  55% {
+    margin-top: -90px;
+  }
+
+  75% {
+    margin-top: -90px;
+  }
+
+  80% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
 }
 
 .portfolio-title {
@@ -44,23 +312,14 @@
 }
 
 .typed {
-  font-size: em;
+  font-size: 3em;
   /* Ajusta el tamaño de la fuente según tus preferencias */
   color: #f1f1f1;
   margin-top: 10px;
   /* Añade un poco de espacio entre las letras y la foto */
 }
 
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
 
-  100% {
-    transform: translateY(-50px);
-    /* Ajusta la cantidad de movimiento vertical */
-  }
-}
 
 /* social links  */
 .social-card {

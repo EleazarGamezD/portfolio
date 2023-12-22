@@ -1,15 +1,44 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 import { Portafolio } from '../interface';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-sobre-mi',
   templateUrl: './sobre-mi.component.html',
-  styleUrls: ['./sobre-mi.component.scss']
+  styleUrls: ['./sobre-mi.component.scss'],
+  animations: [
+    trigger('textAnimation', [
+      state('start', style({ opacity: 0 })),
+      state('end', style({ opacity: 1 })),
+      transition('start => end', animate('2000ms')),
+    ]),
+  ],
 })
 export class SobreMiComponent {
+  componentPosition!: number;
+  animationState = 'start';
+  constructor(private el: ElementRef) { }
+  ngAfterViewInit() {
+    // Obtiene la posición superior del componente después de la inicialización de la vista
+    this.componentPosition = this.el.nativeElement.offsetTop;
+  }
+  @HostListener('window:scroll', ['$event'])
+  checkIfInView() {
+    const scrollPosition = window.pageYOffset;
+    const windowHeight = window.innerHeight;
 
-
-
+    // Verifica si el componente es visible en la pantalla
+    if (scrollPosition > this.componentPosition - windowHeight + 100) {
+      // Este método se puede llamar cuando el componente es visible en la pantalla
+      this.startAnimation();
+    } else {
+      // Reinicia la animación si el componente ya no está visible
+      this.animationState = 'start';
+    }
+  }
+  startAnimation() {
+    this.animationState = 'end'
+  }
 
 
   list_Tecnologias: Portafolio[] = [
@@ -72,5 +101,19 @@ export class SobreMiComponent {
     },
     // angular material logo
     { linkLogo: 'assets/images/material.png' },
+
+    // sass logo
+    {
+      linkLogo:
+        'assets/images/SassLogo.png',
+    },
+
+    // Boststrap logo
+    {
+      linkLogo:
+        'assets/images/bootstrapLogo.png',
+    },
   ];
 }
+
+

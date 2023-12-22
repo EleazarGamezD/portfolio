@@ -7,13 +7,94 @@
 }
 
 /* Agrega estilos adicionales según sea necesario */
+/*Titulo*/
+.projects-container {
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // Ajusta según sea necesario, esto hará que el contenedor ocupe el 100% de la altura de la pantalla
+  padding-top: 4%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+}
+
+h1 {
+  font-size: calc(20px + 6vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #ffffff,
+    0 0 60px #808080,
+    0 0 10px #808080,
+    0 0 98px #ffffff;
+  color: #000000;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffffff,
+      0 0 15px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 60px #808080,
+      0 0 10px #808080,
+      0 0 98px #ffffff;
+    color: #070707;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffffff,
+      0 0 15px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 60px #808080,
+      0 0 10px #808080,
+      0 0 98px #ffffff;
+    color: #000000;
+  }
+}
 
 /* css para aplicar a la tarjeta de los proyectos  */
 /* card for everything's  */
 .card-pc {
-  padding: 10%;
-  height: max-content;
-  width: 60%;
+  width: 100%;
+  box-sizing: border-box;
   /* Ajusta según tus preferencias */
 }
 
@@ -243,16 +324,17 @@ button svg {
 }
 
 .box-info {
-  width: 48%;
-  /* Ajusta el ancho de cada caja según tus preferencias */
-  margin-bottom: 20px;
-  /* Agrega margen inferior para separar las cajas */
-  display: flex;
+  width: 100%;
+  /* Ajusta según sea necesario */
+  margin-bottom: 10px;
+  /* Ajusta según sea necesario */
 }
 
 .card-pc {
   width: 48%;
-  /* Ajusta el ancho del card-pc */
+  /* Ajusta según sea necesario */
+  margin-bottom: 10px;
+  /* Ajusta según sea necesario */
 }
 
 .media {
@@ -282,6 +364,23 @@ button svg {
     max-height: none;
     /* Elimina la altura máxima en pantallas pequeñas */
   }
+}
+
+
+
+/* Test Area */
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 

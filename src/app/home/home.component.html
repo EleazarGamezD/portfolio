@@ -1,33 +1,25 @@
 <!-- eslint-disable @angular-eslint/template/elements-content -->
 <!-- sobre-mi.component.html -->
 <div class="center-container">
-  <div class="profile-container">
-    <div class="profile-photo">
-      <img src="{{photo}}" class="photo" alt="profile Photo" />
+  <div class="home">
+    <div class="profile-container">
     </div>
     <div class="portfolio-title">
-      <ngx-typed-js
-        class="typed"
-        [strings]="['Eleazar  Gámez ']"
-        [loop]="false"
-        [fadeOut]="true"
-        [backDelay]="1000"
-        [showCursor]="false"
-        [smartBackspace]="true"
-        [typeSpeed]="70">
-        <h2 class="typing"></h2>
-      </ngx-typed-js>
-      <ngx-typed-js
-        class="typed"
-        [strings]="['Backend Developer']"
-        [loop]="false"
-        [fadeOut]="true"
-        [backDelay]="1000"
-        [showCursor]="false"
-        [smartBackspace]="true"
-        [typeSpeed]="70">
-        <h2 class="typing"></h2>
-      </ngx-typed-js>
+      <h4 class="wordCarousel">
+        <span>Eleazar Gámez</span>
+      </h4>
+      <h4 class="wordCarousel">
+        <span></span>
+        <div>
+
+          <ul class="flip4">
+            <li>Dev Backend</li>
+            <li>Gamer</li>
+            <li>Músico</li>
+            <li>Entusiasta</li>
+          </ul>
+        </div>
+      </h4>
     </div>
   </div>
   <!--Social media Box -->
