@@ -26,6 +26,7 @@ h1 {
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
+  margin-bottom: 30px;
 }
 
 @-webkit-keyframes blink {
@@ -89,6 +90,7 @@ h2 {
   /* Ajusta el tamaño de la fuente del título */
   color: #000000;
   /* Ajusta el color del texto según tus preferencias */
+  margin-bottom: 2px
 }
 
 * {
@@ -101,6 +103,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 p {
@@ -132,7 +135,7 @@ p {
 
 
 
-/* sobre-mi.component.css */
+
 
 /* logos cards */
 .card-body {
@@ -158,3 +161,5 @@ p {
 }
 
 /* fin css logos */
+
+/* sobre-mi.component.css */

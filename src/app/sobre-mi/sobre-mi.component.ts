@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
-import { Portafolio } from '../interface';
+import { Portafolio } from '../proyectos/interface';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({

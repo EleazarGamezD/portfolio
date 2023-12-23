@@ -1,84 +1,50 @@
- <!-- Proyectos Tab -->
+<!-- eslint-disable @angular-eslint/template/alt-text -->
+<!-- Proyectos Tab -->
 <div class="projects-container" label="Proyectos">
 
-  <h1>Porfolio</h1>
+  <h1>Portfolio</h1>
   <div *ngFor="let items of list_Proyectos; let even = even"
     class="box-info">
-    <div class="row">
+    <div class="row_principal">
       <div class="card-pc" [ngClass]="{ 'even': even, 'odd': !even }">
-        <div class="card">
-          <div class="top">
-            <p class="title">{{ items.text1 }}</p>
-            <span class="buttons">
-              <button class="minimize">
-                <svg viewBox="0 0 10.2 1" y="0px" x="0px">
-                  <rect height="1" width="10.2" y="50%" x="0"></rect>
-                </svg>
-              </button>
-              <button class="maximize">
-                <svg viewBox="0 0 10 10">
-                  <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
-                </svg>
-              </button>
-              <button class="close">
-                <svg viewBox="0 0 10 10">
-                  <polygon
-                    points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon>
-                </svg>
-              </button>
-            </span>
-          </div>
-          <div class="topfix"></div>
-          <hr />
-          <div class="content">
-            <p>
-              <code>
-                <i class="c1">import</i> os, sys<br />
-                <i class="c1">async </i> <b class="c5">runMyProgram </b>
-                <b class="c3">( </b><b class="c4">{{ items.text1 }}</b><b
-                  class="c3"> )<b class="c6">&#123;</b></b><br /><br />
-                <b class="c2">const </b>programTitle <b class="c3">= </b><b
-                  class="c1">program.description</b><br />
-                <br />
-                <b class="c7">console.</b><b class="c8">log</b><b
-                  class="c3">(</b><b
-                  class="c4">"{{ items.text2 }}"</b><b class="c3">)</b><br />
-                <br />
-                <b class="c3">const </b>techStack <b class="c3">= </b><b
-                  class="c1">program.tecnologias</b><br />
-                <br />
-                <b class="c7">console.</b><b class="c8">log</b><b
-                  class="c3">(</b><b
-                  class="c4">"{{ items.text3 }}"</b><b class="c3">)</b><br />
-                <br />
-                <b class="c1">return </b> <br />
-                <b class="c7">console.</b><b class="c8">table</b><b
-                  class="c3">(
-                </b><b class="c4"><a
-                    *ngIf="items.linkCodigo !== null && items.linkCodigo !== undefined && items.linkCodigo !== ''"
-                    target="_blank" [href]="items.linkCodigo"><button
-                      class="link-button">Ver Código</button></a>
-                  <a
-                    *ngIf="items.linkProyecto !== null && items.linkProyecto !== undefined && items.linkProyecto !== ''"
-                    target="_blank" [href]="items.linkProyecto"><button
-                      class="link-button">Ver Proyecto</button></a></b><b
-                  class="c3"> )</b><br />
-
-                <b class="c6">&#125;</b>
-                <br />
-                <br />
-
-                <b class="c2">sys</b>.exit<b class="c3">(</b><b
-                  class="c3">)</b><br />
-                <br />
-                <i class="comment">#this is a comment.</i>
-              </code>
-            </p>
+        <div class="section_our_solution">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="our_solution_category">
+                <div class="solution_cards_box">
+                  <div class="solution_card">
+                    <div class="hover_color_bubble"></div>
+                    <div class="so_top_icon">
+                      <img src="{{items.icon}}" />
+                    </div>
+                    <div class="solu_title">
+                      <h3>{{items.title}}</h3>
+                    </div>
+                    <div class="solu_description">
+                      <p>
+                        {{items.description}}
+                      </p>
+                      <p>
+                        {{items.technologies}}
+                      </p>
+                      <a
+                        *ngIf="items.linkCodigo !== null && items.linkCodigo !== undefined && items.linkCodigo !== ''"
+                        target="_blank" [href]="items.linkCodigo"><button
+                          class="read_more_btn">Ver Código</button></a>
+                      <a
+                        *ngIf="items.linkProyecto !== null && items.linkProyecto !== undefined && items.linkProyecto !== ''"
+                        target="_blank" [href]="items.linkProyecto"><button
+                          class="read_more_btn">Ver Proyecto</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="media">
-        <!-- Aquí puedes poner tu foto o video -->
         <img src="{{ items.image }}" alt="Project Image" *ngIf="items.image"
           class="project-image" />
       </div>

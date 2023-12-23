@@ -1,11 +1,7 @@
-<body>
+<div class="contact-container">
+  <h1 class="heading-section">Contacto</h1>
   <section class="ftco-section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-center mb-5">
-          <h2 class="heading-section">Contacto</h2>
-        </div>
-      </div>
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="wrapper">
@@ -13,10 +9,6 @@
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="contact-wrap w-100 p-md-5 p-4 py-5">
                   <h3 class="mb-4">Escríbeme</h3>
-                  <div id="form-message-warning" class="mb-4"></div>
-                  <div id="form-message-success" class="mb-4">
-                    Your message was sent, thank you!
-                  </div>
                   <form id="contactForm" name="contactForm" class="contactForm"
                     [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                     <div class="row">
@@ -61,7 +53,6 @@
                           <input type="submit" value="Enviar Mensaje"
                             [disabled]="contactForm.invalid"
                             class="btn btn-primary">
-
                         </div>
                       </div>
                     </div>
@@ -71,8 +62,6 @@
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
                   <h3>Información de contacto</h3>
-                  <p class="mb-4">Estoy abierto a cualquier Sugerencia o
-                    Inquietud</p>
                   <div class="dbox w-100 d-flex align-items-center">
                     <div
                       class="icon d-flex align-items-center justify-content-center">
@@ -168,5 +157,5 @@
         </div>
       </div>
     </section>
-  </body>
+  </div>
   <app-cv id="cv"></app-cv>

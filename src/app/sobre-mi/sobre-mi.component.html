@@ -2,9 +2,10 @@
 <!-- sobre-mi.component.html -->
 <div class="about-container">
   <h1>Sobre Mi</h1>
-  <h2>Amante de la Tecnologia, Juegos y la Musica, me encanta la
-    programacion.</h2>
   <div class="center">
+    <h2>Amante de la Tecnologia, Juegos y la Musica, me encanta la
+      programacion.</h2>
+
     <p id="text" [@textAnimation]="animationState">
       Soy Desarrollador Web Backend en etapa Junior con 2 años
       de experiencia en proyectos personales Autodidacta y
@@ -15,9 +16,11 @@
       tecnologías.
     </p>
   </div>
+  <br>
+  <br>
   <!-- inicio tecnologias  -->
   <h1>Mi Stack Tecnologico</h1>
-  <br>
+
   <div class="card-body">
     <div class="d-flex justify-content-between">
       <ng-container *ngFor="let item of list_Tecnologias.slice(1)">

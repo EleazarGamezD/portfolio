@@ -3,6 +3,79 @@
   height: 100vh;
 }
 
+h1 {
+  font-size: calc(20px + 6vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #ffffff,
+    0 0 60px #808080,
+    0 0 10px #808080,
+    0 0 98px #ffffff;
+  color: #000000;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffffff,
+      0 0 15px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 60px #808080,
+      0 0 10px #808080,
+      0 0 98px #ffffff;
+    color: #070707;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffffff,
+      0 0 15px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 60px #808080,
+      0 0 10px #808080,
+      0 0 98px #ffffff;
+    color: #000000;
+  }
+}
+
 .cv-container {
   display: flex;
   flex-direction: column;

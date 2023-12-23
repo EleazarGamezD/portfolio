@@ -1,12 +1,95 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
-/* home.component.css, sobre-mi.component.css, proyectos.component.css, contacto.component.css */
-:host {
-  display: block;
-  height: 100vh;
+/* contacto.component.css */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // Ajusta según sea necesario, esto hará que el contenedor ocupe el 100% de la altura de la pantalla
+  padding-top: 7%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+  box-sizing: border-box;
 }
 
-/* Agrega estilos adicionales según sea necesario */
+/* Seccion Titulo */
+h1 {
+  font-size: calc(20px + 6vh);
+  line-height: calc(20px + 10vh);
+  text-shadow: 0 0 5px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #ffffff,
+    0 0 60px #808080,
+    0 0 10px #808080,
+    0 0 98px #ffffff;
+  color: #000000;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffffff,
+      0 0 15px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 60px #808080,
+      0 0 10px #808080,
+      0 0 98px #ffffff;
+    color: #070707;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffffff,
+      0 0 15px #ffffff,
+      0 0 20px #ffffff,
+      0 0 40px #ffffff,
+      0 0 60px #808080,
+      0 0 10px #808080,
+      0 0 98px #ffffff;
+    color: #000000;
+  }
+}
+
+/* final seccion Titulo */
+
+/* Seccion contacto container */
 $font-primary: 'Poppins',
 Arial,
 sans-serif;
@@ -16,14 +99,7 @@ $success: #00ff00; // Define your success color here
 $primary: #4b4a49;
 
 
-body {
-  font-family: $font-primary;
-  font-size: 16px;
-  line-height: 1.8;
-  font-weight: normal;
-  background: transparent;
-  color: lighten($black, 40%);
-}
+
 
 a {
   transition: .3s all ease;
@@ -37,12 +113,10 @@ a:focus {
   box-shadow: none;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
-.h1,
 .h2,
 .h3,
 .h4,
@@ -58,7 +132,7 @@ h5,
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 0 0;
 }
 
 .ftco-no-pt {
@@ -69,10 +143,7 @@ h5,
   padding-bottom: 0;
 }
 
-.heading-section {
-  font-size: 28px;
-  color: $black;
-}
+
 
 .img {
   background-size: cover;
@@ -229,21 +300,6 @@ textarea.form-control {
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     padding: 0;
   }
-}
-
-#contactForm {
-  .error {
-    color: #f65c78;
-    font-size: 12px;
-  }
-
-  .form-control {
-    font-size: 16px;
-  }
-}
-
-#message {
-  resize: vertical;
 }
 
 
