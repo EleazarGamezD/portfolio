@@ -45,8 +45,14 @@
       </div>
 
       <div class="media">
-        <img src="{{ items.image }}" alt="Project Image" *ngIf="items.image"
-          class="project-image" />
+        <button class="project-image"
+          (click)="items.video !== undefined ? openVideoDialog(items.video) : null">
+          <img
+            src="{{ items.image }}"
+            alt="Project Image"
+            *ngIf="items.image"
+            class="project-image" />
+        </button>
       </div>
     </div>
   </div>

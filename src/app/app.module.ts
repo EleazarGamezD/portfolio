@@ -10,7 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 
 import { NgxTypedJsModule } from 'ngx-typed-js';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { BodyComponent } from './body/body.component';
 import { AppComponent } from './app.component';
@@ -25,10 +25,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
+import { VideosComponent } from './proyectos/videos/videos.component';
 
 
 @NgModule({
-  declarations: [AppComponent, BodyComponent, HomeComponent, SobreMiComponent, ProyectosComponent, ContactoComponent, CvComponent, NavbarComponent, FooterComponent],
+  declarations: [AppComponent, BodyComponent, HomeComponent, SobreMiComponent, ProyectosComponent, ContactoComponent, CvComponent, NavbarComponent, FooterComponent, VideosComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
@@ -42,6 +43,7 @@ import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
     NgxTypedJsModule,
     ReactiveFormsModule,
     RecaptchaModule,
+    MatDialogModule,
     RecaptchaFormsModule],
   providers: [ScrollService,],
   bootstrap: [AppComponent],

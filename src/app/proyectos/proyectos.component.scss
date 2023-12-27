@@ -123,25 +123,9 @@ h1 {
 .project-image {
   width: 100%;
   /* Ajusta el tamaño máximo de la imagen según tus preferencias */
-  max-height: 200px;
+  max-height: 290px;
   /* Ajusta la altura máxima de la imagen según tus preferencias */
-}
-
-@media (max-width: 768px) {
-  .box-info {
-    width: 100%;
-    /* En pantallas pequeñas, ocupa todo el ancho */
-    flex-direction: column;
-  }
-
-  .media {
-    width: 100%;
-  }
-
-  .project-image {
-    max-height: none;
-    /* Elimina la altura máxima en pantallas pequeñas */
-  }
+  cursor: pointer;
 }
 
 
@@ -327,4 +311,9 @@ h1 {
   }
 }
 
-/* fin css para aplicar a la tarjeta de los proyectos  */
+@media (max-width: 768px) {
+  .project-image {
+    max-height: none;
+    /* Elimina la altura máxima en pantallas pequeñas */
+  }
+}

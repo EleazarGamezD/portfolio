@@ -66,6 +66,7 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .menu-icon {
@@ -86,26 +87,32 @@ nav ul li a {
     top: 0;
     margin-top: 16px;
   }
+
   nav ul {
     max-height: 0px;
     background: #000;
   }
+
   nav.black ul {
     background: #000;
   }
+
   .showing {
     max-height: 34em;
   }
+
   nav ul li {
     box-sizing: border-box;
     width: 100%;
     padding: 24px;
     text-align: center;
   }
+
   .menu-icon {
     display: block;
   }
 }
+
 /* The switch - the box around the slider */
 .switch_mode {
   display: block;
@@ -153,11 +160,11 @@ nav ul li a {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #303136;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
   background: #303136;
   /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
@@ -169,5 +176,6 @@ input:checked + .slider:before {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ajusta el valor según sea necesario para que sea mayor que otros elementos */
+  z-index: 1000;
+  /* Ajusta el valor según sea necesario para que sea mayor que otros elementos */
 }

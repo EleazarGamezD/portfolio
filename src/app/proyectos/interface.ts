@@ -3,6 +3,7 @@ export interface Portafolio {
   title?: string;
   description?: string;
   technologies?: string;
+  video?: string;
   image?: string;
   linkCodigo?: string;
   linkProyecto?: string;

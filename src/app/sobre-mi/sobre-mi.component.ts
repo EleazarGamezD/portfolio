@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { Portafolio } from '../proyectos/interface';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
@@ -14,11 +14,11 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     ]),
   ],
 })
-export class SobreMiComponent {
+export class SobreMiComponent implements OnInit {
   componentPosition!: number;
   animationState = 'start';
   constructor(private el: ElementRef) { }
-  ngAfterViewInit() {
+  ngOnInit() {
     // Obtiene la posición superior del componente después de la inicialización de la vista
     this.componentPosition = this.el.nativeElement.offsetTop;
   }
