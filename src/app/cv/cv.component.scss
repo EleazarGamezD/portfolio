@@ -1,6 +1,10 @@
-:host {
-  display: block;
-  height: 100vh;
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 4%;
 }
 
 h1 {
@@ -76,13 +80,6 @@ h1 {
   }
 }
 
-.cv-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-}
 
 h2 {
   font-size: 24px;

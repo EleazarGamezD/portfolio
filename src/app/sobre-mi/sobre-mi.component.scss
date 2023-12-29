@@ -160,6 +160,30 @@ p {
   }
 }
 
+@media (max-width: 414px) {
+  h1 {
+    font-size: calc(12px + 6vh);
+    line-height: calc(12px + 20vh);
+    margin-bottom: 15px;
+    /* Ajusta según tus necesidades */
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .char {
+    font-size: 16px;
+  }
+}
+
+
+
+
 /* fin css logos */
 
 /* sobre-mi.component.css */

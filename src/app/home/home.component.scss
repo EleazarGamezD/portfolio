@@ -410,3 +410,105 @@ body {
     opacity: 1;
   }
 }
+
+@media (max-width: 414px) {
+  .center-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 80%;
+    /* Reducimos el ancho en pantallas más pequeñas */
+    aspect-ratio: unset;
+    /* Eliminamos la relación de aspecto para adaptarse mejor */
+  }
+
+  .profile-container {
+    width: 90%;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    margin-right: 0px;
+    margin-bottom: 20px; // Ajustamos el margen inferior
+    /* Para ocupar el ancho completo del contenedor padre */
+  }
+
+  .home {
+    height: 80vh; // Ajustar la altura según tus necesidades
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; // Colocamos los elementos en columna
+  }
+
+  .social-card {
+    bottom: 30%;
+    /* Ajustamos la posición en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 600px) {
+  /*  .center-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 80%;
+    aspect-ratio: unset;
+  }
+ */
+  /*  .home {
+    width: fit-content;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+ */
+  /* .social-card {
+    bottom: 5%;
+  } */
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: calc(12px + 6vh);
+    line-height: calc(12px + 20vh);
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .char {
+    font-size: 16px;
+    height: 16px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+  }
+
+  .card-img-top {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  .card-img-top:hover {
+    transition-duration: 5ms;
+    opacity: 0.9;
+    transform: scale(1.2);
+  }
+}

@@ -1,9 +1,6 @@
-<div id="main-container">
-  <app-navbar></app-navbar>
 
-  <!-- Show the BodyComponent only when the route is 'v1' -->
-  <router-outlet *ngIf="isV1Route"></router-outlet>
-
-  <!-- Show other components (portfolio, etc.) when not in 'v1' route -->
-  <router-outlet *ngIf="!isV1Route" id="home"></router-outlet>
-</div>
+<app-navbar></app-navbar>
+<!-- Show the BodyComponent only when the route is 'v1' -->
+<router-outlet *ngIf="isV1Route"></router-outlet>
+<!-- Show other components (portfolio, etc.) when not in 'v1' route -->
+<router-outlet *ngIf="!isV1Route" id="home"></router-outlet>
