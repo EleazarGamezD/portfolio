@@ -268,8 +268,21 @@ h1 {
   object-fit: contain;
 }
 
-/*start media query*/
-@media screen and (min-width: 320px) {
+/* Responsive para pantallas Pequeñas */
+@media (max-width: 480px) {
+  .projects-container {
+    margin-top: 100px;
+    padding-top: 1%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+  }
+
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
+    /* Ajusta según tus necesidades */
+  }
+
   .sol_card_top_3 {
     position: relative;
     top: 0;
@@ -288,12 +301,22 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+  }
+
+  .row_principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
   }
 
   .card-pc,
   .media {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
+    align-content: center;
   }
 
   /* Ajustes para la imagen en una columna */
@@ -301,31 +324,68 @@ h1 {
     width: 100%;
     max-height: none;
     margin-bottom: 10px;
+    border-radius: 1rem;
     /* Espacio entre la imagen y el proyecto */
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .our_solution_category .solution_cards_box {
-    flex: 1;
-  }
-}
+/* Responsive Pantallas Grandes */
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .projects-container {
+    margin-top: 100px;
+    padding-top: 1%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
 
-@media only screen and (min-width: 1024px) {
+  }
+
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
+    /* Ajusta según tus necesidades */
+  }
+
   .sol_card_top_3 {
     position: relative;
-    top: -3rem;
+    top: 0;
   }
 
   .our_solution_category {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
-}
 
-@media (max-width: 768px) {
+  .our_solution_category .solution_cards_box {
+    flex: auto;
+  }
+
+  .box-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .row_principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+  }
+
+  .card-pc,
+  .media {
+    width: 80%;
+    margin-bottom: 20px;
+    align-content: center;
+  }
+
+  /* Ajustes para la imagen en una columna */
   .project-image {
+    width: 100%;
     max-height: none;
-    /* Elimina la altura máxima en pantallas pequeñas */
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    /* Espacio entre la imagen y el proyecto */
   }
 }

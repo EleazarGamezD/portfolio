@@ -154,36 +154,110 @@ p {
   transform: scale(1.2);
 }
 
-@media (max-width: 767px) {
-  .card-img-top {
-    width: 35px;
-  }
-}
+/* fin css logos */
 
-@media (max-width: 414px) {
+/* Responsive para pantallas Pequeñas */
+@media (max-width: 480px) {
+  .about-container {
+    margin-top: 100px;
+    padding-top: 3%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+  }
+
   h1 {
-    font-size: calc(12px + 6vh);
-    line-height: calc(12px + 20vh);
-    margin-bottom: 15px;
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
     /* Ajusta según tus necesidades */
   }
 
+  .center {
+    margin-top: 87px;
+    margin-bottom: 130px;
+  }
+
   h2 {
-    font-size: 1.2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 1.3em; // Reduce el tamaño de la fuente del título
+    text-align: center;
   }
 
   p {
-    font-size: 12px;
+    width: 80%; // Aumenta el ancho del párrafo para dispositivos más pequeños
+    font-size: 20px; // Reduce el tamaño de la fuente del párrafo
   }
 
-  .char {
-    font-size: 16px;
+  .col-lg-2,
+  .col-md-3,
+  .col-sm-4,
+  .col-6 {
+    padding: 15px;
+  }
+
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centrar las imágenes en la columna */
+  }
+
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 1px;
+    padding: 1.25rem;
   }
 }
 
+/* Responsive Pantallas Grandes */
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .about-container {
+    padding-top: 10%; // Aumenta el padding-top para dispositivos más pequeños
+  }
 
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    margin-bottom: 20px;
+  }
 
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 1.4em; // Reduce el tamaño de la fuente del título
+    text-align: center; // Reduce el tamaño de la fuente del título
+  }
 
-/* fin css logos */
+  .center {
+    height: 30vh; // Aumenta la altura para dispositivos más pequeños
+  }
+
+  p {
+    width: 90%; // Aumenta el ancho del párrafo para dispositivos más pequeños
+    font-size: 20px; // Reduce el tamaño de la fuente del párrafo
+  }
+
+  .card-img-top {
+    width: 40px; // Reduce el tamaño de la imagen
+    height: 40px; // Reduce el tamaño de la imagen
+  }
+
+}
 
 /* sobre-mi.component.css */

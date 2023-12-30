@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Portafolio } from './interface';
 import { MatDialog } from '@angular/material/dialog';
 import { VideosComponent } from './videos/videos.component';
-
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
@@ -12,6 +12,7 @@ export class ProyectosComponent {
 
   constructor(
     private dialog: MatDialog,
+    private breakpointObserver: BreakpointObserver
 
   ) { }
   list_Proyectos: Portafolio[] = [
@@ -116,11 +117,19 @@ export class ProyectosComponent {
   ];
 
   openVideoDialog(video: string): void {
-    console.log(video)
-    this.dialog.open(VideosComponent, {
+    console.log(video);
+
+    const dialogRef = this.dialog.open(VideosComponent, {
       data: { video },
       width: '950px',
       height: '600px',
+    });
+
+    // Verificar si el dispositivo es un celular y ajustar el tamaño del diálogo
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      if (result.matches) {
+        dialogRef.updateSize('100%', '40%');
+      }
     });
   }
 

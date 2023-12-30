@@ -333,3 +333,214 @@ textarea.form-control {
   border-radius: 60%;
   transition-duration: 0.3s;
 }
+
+/* Responsive para pantallas Pequeñas */
+@media (max-width: 480px) {
+  .contact-container {
+    margin-top: 100px;
+    padding-top: 1%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+  }
+
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
+    margin-top: 230px;
+    /* Ajusta según tus necesidades */
+  }
+
+  .ftco-section {
+    margin-top: 20px;
+  }
+
+  .container {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+
+  h2,
+  h3,
+  h4,
+  h5,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    font-size: small;
+    line-height: 0.5;
+    font-weight: 400;
+    font-family: $font-primary;
+    color: $black;
+  }
+
+  .info-wrap h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: small;
+    position: relative;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 2rem !important;
+  }
+
+  .form-group-recaptcha {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+
+
+  spam {
+    font-size: small;
+  }
+
+  a {
+    font-size: small;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 2rem !important;
+  }
+
+  .dbox .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .contactForm {
+    margin-top: 20px;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Responsive Pantallas Grandes */
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .contact-container {
+    margin-top: 100px;
+    padding-top: 1%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+  }
+
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
+    margin-top: 30px;
+    /* Ajusta según tus necesidades */
+  }
+
+  .ftco-section {
+    margin-top: 20px;
+  }
+
+  .container {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+
+  h2,
+  h3,
+  h4,
+  h5,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    font-size: small;
+    line-height: 0.5;
+    font-weight: 400;
+    font-family: $font-primary;
+    color: $black;
+  }
+
+  .info-wrap h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: small;
+    position: relative;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 2rem !important;
+  }
+
+  .form-group-recaptcha {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+
+
+  spam {
+    font-size: small;
+  }
+
+  a {
+    font-size: small;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 2rem !important;
+  }
+
+  .dbox .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .contactForm {
+    margin-top: 20px;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}

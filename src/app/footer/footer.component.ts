@@ -21,14 +21,13 @@ export class FooterComponent {
   }
 
   navigateTo(sectionId: string): void {
-    if (sectionId === 'body') {
-      this.appComponent.togglePopup(true);
-      this.router.navigate([{ outlets: { popup: ['body'] } }]);
+    if (sectionId === 'v1') {
+      this.router.navigate(['/v1']);
     } else {
-      this.appComponent.togglePopup(false);
+      this.router.navigate(['/']);
       const element = this.document.getElementById(sectionId);
       if (element) {
-        this.viewportScroller.scrollToAnchor(sectionId);
+        element.scrollIntoView({ behavior: 'smooth' });
       }
     }
   }

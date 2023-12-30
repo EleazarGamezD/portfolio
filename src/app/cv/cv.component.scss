@@ -159,4 +159,70 @@ button {
 }
 
 
-/* Agrega estilos adicionales según sea necesario */
+/* Responsive para pantallas Pequeñas */
+@media (max-width: 480px) {
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-top: 1%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+  }
+
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
+    margin-top: 10px;
+    /* Ajusta según tus necesidades */
+  }
+
+  .cv-buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .unique-card {
+    position: relative;
+    width: 196px;
+    height: 176px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+}
+
+/* Responsive Pantallas Grandes */
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .cv-container {
+    margin-top: 100px;
+    padding-top: 30%; // Ajusta según sea necesario, esto asegurará que haya espacio suficiente para el navbar
+
+  }
+
+  h1 {
+    font-size: calc(10px + 4vh);
+    line-height: calc(10px + 5vh);
+    text-align: center;
+    margin-top: 30px;
+    /* Ajusta según tus necesidades */
+  }
+
+  .cv-buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .unique-card {
+    position: relative;
+    width: 196px;
+    height: 176px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+}

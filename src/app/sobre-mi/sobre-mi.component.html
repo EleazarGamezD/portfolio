@@ -19,12 +19,14 @@
   <br>
   <br>
   <!-- inicio tecnologias  -->
+  <!-- inicio tecnologias  -->
   <h1>Mi Stack Tecnologico</h1>
-
   <div class="card-body">
-    <div class="d-flex justify-content-between">
-      <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
-        <img src="{{ item.linkLogo }}" class="card-img-top" />
+    <div class="row">
+      <ng-container *ngFor="let item of list_Tecnologias; let i = index;">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6" *ngIf="i > 0">
+          <img src="{{ item.linkLogo }}" class="card-img-top" />
+        </div>
       </ng-container>
     </div>
   </div>

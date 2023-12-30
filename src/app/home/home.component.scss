@@ -411,14 +411,26 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+/* Responsive Pantallas Medianas */
+@media (max-width: 480px) {
+
+  .wordCarousel {
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+    font-family: "Sacramento",
+      cursive;
+  }
+
   .center-container {
     display: flex;
-
+    max-width: auto;
+    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 120vh;
-    width: 80%;
+    height: auto;
+
     /* Reducimos el ancho en pantallas más pequeñas */
     aspect-ratio: unset;
     /* Eliminamos la relación de aspecto para adaptarse mejor */
@@ -426,7 +438,9 @@ body {
 
   .profile-container {
     width: 90%;
-    max-width: none;
+    width: 290px;
+    height: 290px;
+    max-width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,77 +452,96 @@ body {
   }
 
   .home {
-    height: 80vh; // Ajustar la altura según tus necesidades
-    max-width: none;
+    margin-top: 115px;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; // Colocamos los elementos en columna
   }
 
+
+
   .social-card {
-    bottom: 30%;
-    /* Ajustamos la posición en pantallas más pequeñas */
+    width: auto;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    transform: translateX(0%);
   }
+
+
+
 }
 
-@media (max-width: 600px) {
-  /*  .center-container {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-    width: 80%;
-    aspect-ratio: unset;
+/* Responsive Pantallas Grandes */
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .wordCarousel {
+    font-size: 80px;
+    font-weight: 700;
+    color: #000000;
+    font-family: "Sacramento",
+      cursive;
   }
- */
-  /*  .home {
-    width: fit-content;
-    height: 80vh;
+
+  .center-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: auto;
     flex-direction: column;
 
-  }
- */
-  /* .social-card {
-    bottom: 5%;
-  } */
-}
+    justify-content: center;
+    align-items: center;
+    height: auto;
 
-@media (max-width: 414px) {
-  h1 {
-    font-size: calc(12px + 6vh);
-    line-height: calc(12px + 20vh);
-    margin-bottom: 15px;
+    /* Reducimos el ancho en pantallas más pequeñas */
+    aspect-ratio: unset;
+    /* Eliminamos la relación de aspecto para adaptarse mejor */
   }
 
-  h2 {
-    font-size: 1.2em;
+  .profile-container {
+
+    width: 290px;
+    height: 290px;
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    margin-right: 0px;
+    margin-bottom: 20px; // Ajustamos el margen inferior
+    /* Para ocupar el ancho completo del contenedor padre */
   }
 
-  p {
-    font-size: 12px;
+  .home {
+    margin-top: 200px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; // Colocamos los elementos en columna
   }
 
-  .char {
-    font-size: 16px;
-    height: 16px;
-    animation: an 1s ease-out 1 both;
-    display: inline-block;
+
+
+  .social-card {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    position: absolute;
+    bottom: 3%;
+    left: 16%;
+    transform: translateX(0%);
   }
 
-  .card-img-top {
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-  }
-
-  .card-img-top:hover {
-    transition-duration: 5ms;
-    opacity: 0.9;
-    transform: scale(1.2);
-  }
 }
