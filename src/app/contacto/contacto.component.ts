@@ -13,11 +13,11 @@ export class ContactoComponent {
   contactForm: FormGroup;
 
   constructor(
-    private fb: FormBuilder,
+    private formBuilder: FormBuilder,
     private emailService: EmailService
   ) {
     this.token = undefined;
-    this.contactForm = this.fb.group({
+    this.contactForm = this.formBuilder.group({
       name: [null, Validators.required],
       contactEmail: [null, [Validators.required, Validators.email]],
       subject: [null, Validators.required],

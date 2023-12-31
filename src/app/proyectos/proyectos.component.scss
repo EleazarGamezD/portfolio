@@ -101,23 +101,28 @@ h1 {
   /* Ajusta según sea necesario */
 }
 
-.card-pc {
+/* .card-pc {
   width: 48%;
-  /* Ajusta según sea necesario */
   margin-bottom: 10px;
-  /* Ajusta según sea necesario */
-}
+} */
 
-.media {
+/* .media {
   width: 48%;
-  /* Ajusta el ancho de la sección de media */
+
+}
+ */
+.card-pc,
+.media {
+  width: 35%;
+  padding: 1%;
+  margin-bottom: 20px;
+  align-content: center;
 }
 
 .project-image {
   width: 100%;
-  /* Ajusta el tamaño máximo de la imagen según tus preferencias */
   max-height: 290px;
-  /* Ajusta la altura máxima de la imagen según tus preferencias */
+  border-radius: 1rem;
   cursor: pointer;
 }
 
@@ -128,6 +133,7 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   align-content: space-between;
+  justify-content: center;
 
 }
 
