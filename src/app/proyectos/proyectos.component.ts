@@ -21,7 +21,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/node-Express-logo.png',
       video: 'assets/videos/Mailer PF/MailerPF.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Mailer App',
       description: 'Api Backend para envio de Email desde mi portafolio que envia dos(2) Emails uno mi y el otro para la persona que me escribe para notificar la recepción  ',
       technologies: 'Stack de tecnologías : Nodejs, ExpressJS, JavaScript, Nodemailer, GoogleMails',
@@ -33,7 +33,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/node-Express-logo.png',
       video: 'assets/videos/Noes-App/NotesApp.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Notes App',
       description: 'Api Backend para manejo de Notas tipo Pos sticks con manejo de usuarios, CRUD completo de Notas, manejo de Categorías asignadas a las notas ',
       technologies: 'Stack de tecnologías : Nodejs, ExpressJS, JavaScript, MongoDB, JsonWebToken (JTW), Html , CSS',
@@ -44,7 +44,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/NestJS.svg.png',
       video: 'assets/videos/Tu Bodega/Tu-bodega.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Tu Bodega Api',
       description:
         'Api de un E-comerce escalable con funciones básicas como creación de usuarios, roles de usuarios, creación de productos, carrito de compras por usuario, control de compras, usando base de datos Relacional Postgres y TyORM para el manejo, sistema de autenticaciones y encriptado de passwords.',
@@ -56,7 +56,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/NestJS.svg.png',
       video: 'assets/videos/Pokedex/Pokedex.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Pokedex',
       description:
         'Backend con conexion al API pokeapi.co para implementación del seed, con conexión a MongoAtlas, usando el framework NestJs',
@@ -68,7 +68,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/NestJS.svg.png',
       video: 'assets/videos/GG-SHOP/GG-SHOP.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'GG-Shop',
       description:
         'Backend de una app web tipo ecomerce realizada durante mis clases, con funciones básicas de productos y autenticación de usuarios, con conexión a  base de datos Postgres uso de TypeOrm, e implementación de un chat por cliente usando Websockets. ',
@@ -80,7 +80,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/NestJS.svg.png',
       video: 'assets/videos/GG-SHOP/GG-SHOP.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Proyecto WS-Client',
       description:
         'Peque#o proyecto frontend que se conecta al api GG-shop para el servicio de websocket',
@@ -92,7 +92,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/Angular_full_color_logo.svg',
       video: 'assets/videos/Rick And Morty/RickAndMorty.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Rick-And-Morty-Angular-Test',
       description:
         'Proyecto tipo ensayo, con conexión al api rickymortyapi.com realizado para aprender el uso de técnicas frontend a nivel junior  ',
@@ -105,7 +105,7 @@ export class ProyectosComponent {
     {
       icon: 'assets/images/logo-yo-bh.png',
       video: 'assets/videos/Cursos-Apps/Cursos-Apps.mp4',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/click.gif',
       title: 'Cursos',
       description:
         'Coleccion de proyectos realizados durante mis estudios de backend, divididos en carpetas segundo el ejercicio realizado donde tenemos: Auth, Compras, Mi-App, Proyecto-Mailer,Proyecto-Auth. ',
